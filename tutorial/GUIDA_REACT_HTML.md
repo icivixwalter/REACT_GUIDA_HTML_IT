@@ -96,3 +96,20 @@
 			   su https://github.com/icivixwalter
 			   passw walter_01_
 				
+
+				esempio completo di creazione di una repository in locale e pubblicazione:
+					creo la repositori in locale + su github
+
+						echo "# REACT_GUIDA_HTML_IT" >> README.md
+						git init
+						git add README.md
+						git commit -m "first commit"
+						git branch -M main
+						git remote add origin https://github.com/icivixwalter/REACT_GUIDA_HTML_IT.git
+						git push -u origin main
+
+
+					poi devi rifare il commit
+						git add .
+						git commit -m "inizio"
+						git push 
