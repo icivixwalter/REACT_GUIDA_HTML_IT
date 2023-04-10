@@ -48,146 +48,13 @@
 	"buffers":
 	[
 		{
-			"contents": "# GUIDA REACT\n\t\t\t\tReact è probabilmente la prima libreria JavaScript che nasce (nei laboratori di Facebook) con una vocazione specifica: diventare la soluzione definitiva per sviluppatori frontend e App mobile basate su HTML5, la proverbiale \"panacea per tutti i mali\", il tool che permetta di costruire interfacce utente dinamiche e sempre più complesse rimanendo comunque semplice e intuitivo da utilizzare.\n\n## Dove, come e perchè… React\n\t\t1. React, la libreria dedicata al frontend  @1.FRONTEND\n\t\t2. React vs JQuery\n\t\t3. React vs AngularJS\n\t\t4. React, download e tool di sviluppo\n\t\tPrimi passi\n\t\t5. Hello React! Scopriamo createClass e render\n\t\t6. JSX, la sintassi\n\t\t7. React, stato e proprietà dei componenti\n\t\t8. Gestire gli eventi in React\n\t\t9. React, dietro le quinte\n\t\t10. Virtual DOM\n\t\t11. ReactElement e ReactText\n\t\tComponenti React\n\t\t12. Creare un componente React\n\t\t13. Ciclo di vita dei componenti\n\t\t14. Gestire lo stato dei componenti\n\t\t15. Ottimizzare la gestione dello stato\n\t\t16. Il rendering dell'interfaccia utente\n\t\t17. Pensare in React, dai componenti al progetto dell'app\n\t\t18. React Tool chain: ES6, Babel, Node.js\n\t\tCreare un progetto React completo\n\t\t19. Creare una nuova applicazione React\n\t\t20. Struttura del progetto e dei package\n\t\t21. Aggiungere e modificare i componenti\n\t\t22. Gestire la navigazione tra le viste\n\t\t23. Menu di navigazione\n\n\n## 1. REACT, LA LIBRERIA DEDICATA AL FRONTEND\n\t\t\tNote\n\t\t\t\t\t@1.FRONTEND\n\t\t\t\tReact sfrutta l'approccio dichiarativo (un linguaggio di markup che estende l'HTML), per comporre l'interfaccia delle single page applications.\n\t\t\t\t\t@react@single@page\n\t\n\t\t\t\tReact è probabilmente la prima libreria JavaScript che nasce con una vocazione specifica: diventare la soluzione definitiva per sviluppatori frontend e app mobile basate su HTML5, la proverbiale \"panacea per tutti i mali\", il tool che permetta di costruire interfacce utente dinamiche e sempre più complesse rimanendo comunque semplice e intuitivo da utilizzare.\n\t\t\t\t\t\t@REACT@INTERFACCIA@FRONTEND+APP.MOBILE@HTML5\n\t\n\t\t\t\t\n\t\t\t\tCreata da Facebook, React è la colonna portante del il social network più popolare del mondo e su di essa si basa l'interfaccia Web di Instagram.\n\t\n\t\t\t\tLa libreria può essere scaricata dal sito ufficiale, facebook.github.io/react/, che contiene tra le altre cose anche una introduzione rapida all'uso e diversi esempi.\n\t\t\t\t\t\t@LIBERERIA@REACT\n\t\t\t\t\t\t\thttps://react.dev/\n\t\n\t\t\t\t\n\t\t\tL'approccio React\n\t\t\t\tLa creazione di applicazioni Web, indipendentemente dal framework scelto per lo sviluppo, coinvolge necessariamente i tre linguaggi fondamentali della piattaforma: \n\t\t\t\t\tHTML per la struttura, \n\t\t\t\t\tCSS per la stilizzazione e \n\t\t\t\t\tJavaScript per la logica applicativa.\n\t\t\t\t\n\t\t\t\tPer molte delle librerie esistenti, e React non fa eccezione, il linguaggio HTML nello specifico viene utilizzato quasi esclusivamente per creare “componenti Web” riutilizzabili, a volte estendendo il linguaggio HTML stesso.\n\t\t\t\t\n\t\t\t\tLe pagine complete invece sono ridotte al minimo, anzi molto spesso a una sola, tant'è vero che queste applicazioni prendono il nome di Single Page Applications (SPA) e che servono da “contenitore” in cui creare e gestire l'interfaccia utente.\n\t\t\t\t\n\t\t\t\tLa forza di React rispetto ad altre librerie è quella di consentire l'uso di un approccio dichiarativo simile all'HTML, quindi molto familiare, per definire i componenti che rappresentano parti significative e logiche dell'interfaccia utente, ad esempio un commento a un articolo, o la lista degli stessi commenti.\n\t\t\t\t\n\t\t\t\tBenché dichiarativa, la rappresentazione del componente in realtà si traduce in chiamate all'API di React che intervengono - nel modo più veloce e performante possibile - sul DOM della pagina per creare gli elementi necessari.\n\t\t\t\t\n",
-			"file": "tutorial/GUIDA_REACT_HTML.md",
-			"file_size": 2456,
-			"file_write_time": 133255279627737593,
+			"file": "/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT_DOS_COPY.bat",
 			"settings":
 			{
-				"buffer_size": 3769,
+				"buffer_size": 473,
+				"encoding": "Western (Windows 1252)",
 				"line_ending": "Windows"
-			},
-			"undo_stack":
-			[
-				[
-					8,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAI4FAAAAAAAAjwUAAAAAAAAAAAAAjwUAAAAAAACSBQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACOBQAAAAAAAI4FAAAAAAAAAAAAAAAATEA"
-				],
-				[
-					10,
-					1,
-					"insert",
-					{
-						"characters": "Note"
-					},
-					"BAAAAI4FAAAAAAAAjwUAAAAAAAAAAAAAjwUAAAAAAACQBQAAAAAAAAAAAACQBQAAAAAAAJEFAAAAAAAAAAAAAJEFAAAAAAAAkgUAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACOBQAAAAAAAI4FAAAAAAAAAAAAAAAATEA"
-				],
-				[
-					14,
-					1,
-					"mde_indent_list_item",
-					null,
-					"DwAAAGMJAAAAAAAAZwkAAAAAAAADAAAACQkJYgkAAAAAAABjCQAAAAAAAAAAAABJCQAAAAAAAFAJAAAAAAAABgAAAAkJCQkJCTMJAAAAAAAAOQkAAAAAAAAFAAAACQkJCQmJCAAAAAAAAI0IAAAAAAAAAwAAAAkJCYgIAAAAAAAAiQgAAAAAAAAAAAAA8wcAAAAAAAD3BwAAAAAAAAMAAAAJCQnvBwAAAAAAAPMHAAAAAAAAAwAAAAkJCe4HAAAAAAAA7wcAAAAAAAAAAAAAvAcAAAAAAADCBwAAAAAAAAUAAAAJCQkJCU4GAAAAAAAAUgYAAAAAAAADAAAACQkJTQYAAAAAAABOBgAAAAAAAAAAAAA2BgAAAAAAADsGAAAAAAAABAAAAAkJCQmjBQAAAAAAAKcFAAAAAAAAAwAAAAkJCZMFAAAAAAAAmAUAAAAAAAAEAAAACQkJCQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACTBQAAAAAAAGYJAAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					22,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAHUJAAAAAAAAdgkAAAAAAAAAAAAAdgkAAAAAAAB6CQAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB1CQAAAAAAAHUJAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					23,
-					1,
-					"unindent",
-					null,
-					"AQAAAHYJAAAAAAAAdgkAAAAAAAABAAAACQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB6CQAAAAAAAHoJAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					24,
-					1,
-					"paste",
-					null,
-					"AQAAAHkJAAAAAAAAigkAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB5CQAAAAAAAHkJAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					25,
-					1,
-					"insert",
-					{
-						"characters": "\n\t"
-					},
-					"AwAAAIoJAAAAAAAAiwkAAAAAAAAAAAAAiwkAAAAAAACOCQAAAAAAAAAAAACOCQAAAAAAAI8JAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACKCQAAAAAAAIoJAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					26,
-					1,
-					"paste",
-					null,
-					"AQAAAI8JAAAAAAAAgw4AAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACPCQAAAAAAAI8JAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					28,
-					4,
-					"mde_indent_list_item",
-					null,
-					"KAAAAIIOAAAAAAAAgw4AAAAAAAAAAAAAnw0AAAAAAACgDQAAAAAAAAAAAACeDQAAAAAAAJ8NAAAAAAAAAAAAAGMMAAAAAAAAZAwAAAAAAAAAAAAAYgwAAAAAAABjDAAAAAAAAAAAAABuCwAAAAAAAG8LAAAAAAAAAAAAAG0LAAAAAAAAbgsAAAAAAAAAAAAAjAoAAAAAAACNCgAAAAAAAAAAAACLCgAAAAAAAIwKAAAAAAAAAAAAAD8KAAAAAAAAQAoAAAAAAAAAAAAAiw4AAAAAAACNDgAAAAAAAAEAAAAJpw0AAAAAAACpDQAAAAAAAAEAAAAJpQ0AAAAAAACnDQAAAAAAAAEAAAAJaQwAAAAAAABrDAAAAAAAAAEAAAAJZwwAAAAAAABpDAAAAAAAAAEAAAAJcgsAAAAAAAB0CwAAAAAAAAEAAAAJcAsAAAAAAAByCwAAAAAAAAEAAAAJjgoAAAAAAACQCgAAAAAAAAEAAAAJjAoAAAAAAACOCgAAAAAAAAEAAAAJPwoAAAAAAABBCgAAAAAAAAEAAAAJlA4AAAAAAACXDgAAAAAAAAIAAAAJCa8NAAAAAAAAsg0AAAAAAAACAAAACQmsDQAAAAAAAK8NAAAAAAAAAgAAAAkJbwwAAAAAAAByDAAAAAAAAAIAAAAJCWwMAAAAAAAAbwwAAAAAAAACAAAACQl2CwAAAAAAAHkLAAAAAAAAAgAAAAkJcwsAAAAAAAB2CwAAAAAAAAIAAAAJCZAKAAAAAAAAkwoAAAAAAAACAAAACQmNCgAAAAAAAJAKAAAAAAAAAgAAAAkJPwoAAAAAAABCCgAAAAAAAAIAAAAJCZ0OAAAAAAAAoQ4AAAAAAAADAAAACQkJtw0AAAAAAAC7DQAAAAAAAAMAAAAJCQmzDQAAAAAAALcNAAAAAAAAAwAAAAkJCXUMAAAAAAAAeQwAAAAAAAADAAAACQkJcQwAAAAAAAB1DAAAAAAAAAMAAAAJCQl6CwAAAAAAAH4LAAAAAAAAAwAAAAkJCXYLAAAAAAAAegsAAAAAAAADAAAACQkJkgoAAAAAAACWCgAAAAAAAAMAAAAJCQmOCgAAAAAAAJIKAAAAAAAAAwAAAAkJCT8KAAAAAAAAQwoAAAAAAAADAAAACQkJ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACDDgAAAAAAAD8KAAAAAAAAAAAAAAAAAAA"
-				],
-				[
-					31,
-					1,
-					"insert",
-					{
-						"characters": " "
-					},
-					"AQAAAD4KAAAAAAAAPwoAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA+CgAAAAAAAD4KAAAAAAAAAAAAAADgakA"
-				],
-				[
-					32,
-					5,
-					"right_delete",
-					null,
-					"BQAAAD8KAAAAAAAAPwoAAAAAAAABAAAACj8KAAAAAAAAPwoAAAAAAAABAAAACT8KAAAAAAAAPwoAAAAAAAABAAAACT8KAAAAAAAAPwoAAAAAAAABAAAACT8KAAAAAAAAPwoAAAAAAAABAAAACQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAA/CgAAAAAAAD8KAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					39,
-					1,
-					"insert",
-					{
-						"characters": "\n\t"
-					},
-					"AwAAADMKAAAAAAAANAoAAAAAAAAAAAAANAoAAAAAAAA4CgAAAAAAAAAAAAA4CgAAAAAAADkKAAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAzCgAAAAAAADMKAAAAAAAA////////738"
-				],
-				[
-					42,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAFAKAAAAAAAAUQoAAAAAAAAAAAAAUQoAAAAAAABWCgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABQCgAAAAAAAFAKAAAAAAAAAAAAAAAA8L8"
-				],
-				[
-					45,
-					1,
-					"insert",
-					{
-						"characters": "\n"
-					},
-					"AgAAAHEKAAAAAAAAcgoAAAAAAAAAAAAAcgoAAAAAAAB3CgAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABxCgAAAAAAAHEKAAAAAAAAAAAAAAAA8L8"
-				]
-			]
+			}
 		}
 	],
 	"build_system": "",
@@ -201,6 +68,18 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"a",
+				"Arithmetic"
+			],
+			[
+				"ari",
+				"Arithmetic"
+			],
+			[
+				"THEME",
+				"UI: Select Theme"
+			],
 			[
 				"Package Control: ",
 				"Package Control: Install Package"
@@ -285,18 +164,25 @@
 		"show_minimap": false,
 		"show_open_files": false,
 		"show_tabs": false,
-		"side_bar_visible": false,
+		"side_bar_visible": true,
 		"status_bar_visible": true
 	},
 	"expanded_folders":
 	[
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html",
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/src",
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial"
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/src",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial"
 	],
 	"file_history":
 	[
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/src/App.tsx",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_REACT_HTML.md",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT.MD",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/src/App.tsx",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/src/App.css",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/.gitignore",
+		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT_DOS_COPY.bat",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/REACT_GUIDA_HTML.sublime-project",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_CONCETTI_CHIAVE/react_concetti_chiave_deno.sublime-project",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_CONCETTI_CHIAVE/tutorial/JAVA_JSX_CONCETTI_CHIAVE.MD",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_CONCETTI_CHIAVE/tutorial/GUIDA_REACT_HTML.md",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_CONCETTI_CHIAVE/tutorial/GUIDE_AVANZATE.md",
@@ -416,18 +302,11 @@
 		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/MENU_GESTIONE/MENU_GESTIONE_SUBLIME_TEXT_ANALISI/MENU_GESTIONE_SublimeText_Project.sublime-workspace",
 		"/C/TMP/TMP_oggi/DA_PROTOCOLLARE/MODELLI_AVVOCATURA_RISPOSTE/GIZA/MEMO_7_2021.txt",
 		"/C/CASA/CDM/MEMO_7_2021.txt",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_12_GRUPPO_ATTO.MD",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_11_GRUPPO_ANNO.MD",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/TABELLE/CIVILIA_Tb01_ATTI.MD",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_00_GE_ATTI.MD",
-		"/C/TMP/TMP_oggi/CONDOMINIO_QUADRINI/CONDOMINIO_QUADRINI_ATTI/Condominio_QUADRINI_ATTI_NOCE",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/PROGETTO_SUBLIME_TEXT/CIVILIA_SUBLIME_TEXT_ANALISI.sublime-project",
-		"/C/TMP/TMP_oggi/DA_SISTEMARE/COPIE_DISCARICA_LA_PROVINCIA",
-		"/C/TMP/TMP_oggi/DA_PUBBLICARE/LPDD_200_2021_DET_1409_2021/DET_1409_2021_TEXT.txt"
+		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/SUBLIME_TEXT_ANALISI/FORM/CIVILIA_FrmTb01_12_GRUPPO_ATTO.MD"
 	],
 	"find":
 	{
-		"height": 29.0
+		"height": 41.0
 	},
 	"find_in_files":
 	{
@@ -442,7 +321,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"@1.FRONTEND",
+			"inserimento",
+			"INSERIMENTO",
+			"inserimento",
+			"INSERIMENTO",
+			"inserimento",
+			"aggiungere",
+			"Aggiungere",
+			"aggiungere",
+			"Vendemmia",
+			"fore",
+			"@tab",
+			"tab",
+			"GIT",
 			"@come@creare",
 			"@progetto@deno",
 			"@creare",
@@ -512,6 +403,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"  2.0.INTRODUTTIVA\n         2.1.INSTALLAZIONE\n",
 			"import App from './components/App'",
 			"@CASELLA@DI@TESTO@textArea",
 			"@LISTE.E.CHIAVI",
@@ -534,20 +426,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "tutorial/GUIDA_REACT_HTML.md",
+					"file": "/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT_DOS_COPY.bat",
 					"selected": true,
-					"semi_transient": false,
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3769,
+						"buffer_size": 473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2679,
-								2679
+								0,
+								0
 							]
 						],
 						"settings":
@@ -566,73 +458,76 @@
 								},
 								"unmatched":
 								{
+									"1":
+									[
+										182,
+										183
+									]
 								}
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_c_define",
-								"bh_c_define_center",
-								"bh_c_define_open",
-								"bh_c_define_close",
-								"bh_c_define_content",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
 								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
 								"bh_angle",
 								"bh_angle_center",
 								"bh_angle_open",
 								"bh_angle_close",
-								"bh_angle_content"
+								"bh_angle_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
-							"lsp_uri": "file:///C:/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_REACT_HTML.md",
-							"syntax": "Packages/Naomi/syntaxes/naomi.md1.sublime-syntax",
-							"tab_size": 3,
-							"translate_tabs_to_spaces": false
+							"lsp_uri": "file:///C:/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT_DOS_COPY.bat",
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 772.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -644,7 +539,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 29.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -709,7 +604,7 @@
 	"project": "REACT_GUIDA_HTML.sublime-project",
 	"replace":
 	{
-		"height": 54.0
+		"height": 60.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -729,7 +624,7 @@
 		[
 			[
 				"",
-				"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_CONCETTI_CHIAVE\\react_concetti_chiave_deno.sublime-project"
+				"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\REACT_GUIDA_HTML.sublime-project"
 			]
 		],
 		"width": 391.0
