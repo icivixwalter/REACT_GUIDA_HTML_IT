@@ -29,10 +29,6 @@ HELP_SUBLIMETEXT
                      ["esempio di apertura apri libro NEL BROWSER HTML con ctrl+b"](C:\CASA\LINGUAGGI\INGLESE\ENGLISH_TUTORIAL\ENGLISH.MD)
 
                         @APRI@FILE.ESTERNO  @LINK@FILE        
-
-   
-
-
    C
         
         COMMAND 
@@ -89,8 +85,6 @@ HELP_SUBLIMETEXT
                                 Page controll ---->
                                 Open Resource  ---->  
                                         Color-Scheme-default -----> Monokai.sublime-color-scheme
-
-   
    K
       Default Key Bindings
                                             https://rowannicholls.github.io/sublime_text/key_bindings.html
@@ -251,14 +245,6 @@ HELP_SUBLIMETEXT
             Use the ‘default’ Default.sublime-keymap file (ie the one the opens up on the left-hand side when you go to Preferences > Key Bindings) to figure out what commands exist and how to re-bind them. Also take a look at the key bindings documentation.
            
             Usa il file Default.sublime-keymap "predefinito" (ovvero quello che si apre sul lato sinistro quando vai su Preferenze> Associazioni tasti) per capire quali comandi esistono e come riassociarli. Dai anche un'occhiata alla documentazione sui collegamenti dei tasti.
-         
-
-
-
-
-
-
-
    I
         IMPOSTAZIONI
                 Note
@@ -404,7 +390,6 @@ HELP_SUBLIMETEXT
                                 "value": "Packages/Color Scheme - Default/Cobalt.tmTheme"
                             }
                         }
-
    M
       MODALITA VINTAGE
                             @MODALITA@VINTAGE@VI
@@ -485,7 +470,6 @@ HELP_SUBLIMETEXT
                      "vintage_ctrl_keys": true
 
                   VEDERE ANCHE LE ESTENSIONE VINTAGE.              
-
    P
    	PREFERENZE
          Attenzione le preferenze si trovano in questo file Preferences.sublime-settings
@@ -537,11 +521,6 @@ HELP_SUBLIMETEXT
         W            
             word_wrap 
                 - Voglio sempre che il testo vada a capo. Nessuno scorrimento orizzontale per me, anche con il codice sorgente. @RITORNO@A@CAPO
-
-
-
-
-
    S
         
      
@@ -619,7 +598,6 @@ HELP_SUBLIMETEXT
                 Note
                   Questo plugin estende le funzionalità della sidebar. Di default, tramite tasto destro su file e cartelle, non è possibile fare granché. Il plugin aggiunge una serie di comandi utili per velocizzare le classiche operazioni sui file.
                       @estensione@gestione@file  @windows@file@gestione
-
    T
     TEMI
         
@@ -1107,9 +1085,8 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
                Associazioni di tasti
                Menu
                Combinazioni di colori
-
-
       4.1.2.Impostazioni
+         Nota
             Sublime Text memorizza i dati di configurazione in file. La flessibilità ha il prezzo di un sistema leggermente complesso per l'applicazione Impostazioni. TUTTAVIA, ECCO UNA REGOLA EMPIRICA:.SUBLIME-SETTINGS
 
             Inserisci sempre i tuoi FILE DELLE IMPOSTAZIONI PERSONALI sotto garantire che AVRANNO LA PRECEDENZA su qualsiasi altra impostazione in conflitto ﬁle.Packages/User
@@ -1130,7 +1107,6 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
 
             Le modifiche alle impostazioni vengono solitamente aggiornate in tempo reale, ma potrebbe essere necessario riavviare Sublime Text per caricare nuovi file di impostazioni.
 
-
          Come accedere e modificare i file delle impostazioni comuni
             A meno che tu non abbia bisogno di un controllo granulare sulle impostazioni, puoi accedere i principali file di configurazione tramite le 
                Preferenze | Impostazioni- Utente e 
@@ -1139,11 +1115,189 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
 
             - L'impostazione predefinita è sconsigliata, perché le modifiche verrà ripristinato con ogni aggiornamento del software. Tuttavia, è possibile utilizzare Quel file di riferimento: contiene commenti che spiegano lo scopo di Tutte le impostazioni globali e del tipo di file disponibili.
 
-         Ordine di precedenza d
+         Ordine di precedenza dei file.sublime-settings
+               Lo stesso file di impostazioni (ad esempio ) può essere visualizzato in più luoghi. Tutte le impostazioni definite in file con nomi identicic saranno uniti insieme e sovrascritti secondo regole predefinite. Per ulteriori informazioni, vedere .Python.sublime-settingsmerging-and-order-of-precedence
+
+               Ricordiamo ancora una volta che ogni dato FILE DI IMPOSTAZIONI IN DEFINITIVA SOVRASCRIVE ogni altro file di impostazioni con lo stesso nome.Packages/User
+
+               Oltre ai file di impostazioni, Sublime Text mantiene i dati di sessione, che sono configurazione per il particolare set di file attualmente in fase di modifica. Sessione I dati vengono aggiornati man mano che si lavora sui file, quindi se si regolano le impostazioni per un particolare file in qualsiasi modo (principalmente tramite chiamate API), verranno registrati nella sessione e avrà la precedenza su qualsiasi file applicabile..sublime-settings
+
+               Per verificare il valore di un'impostazione per un determinato file in fase di modifica, utilizzare dalla console.view.settings().get("setting_name")
+
+               Infine, vale anche la pena notare che alcune impostazioni potrebbero essere automaticamente adattato per te. Tienilo a mente se sei perplesso su alcuni valore dell'impostazione. Ad esempio, questo è il caso di alcuni Impostazioni relative agli spazi vuoti e impostazione.syntax
+
+               Di seguito, puoi vedere l'ordine in cui Sublime Text elaborerebbe un gerarchia ipotetica delle impostazioni per i file Python su Windows:
+
+                        Packages/Default/Preferences.sublime-settings
+                        Packages/Default/Preferences (Windows).sublime-settings
+                        Pacchetti/Utente/Preferenze.sublime-impostazioni
+                        Packages/Python/Python.sublime-settings
+                        Packages/User/Python.sublime-settings
+                        Dati di sessione per il file corrente
+                        Impostazioni regolate automaticamente
+
+         Impostazioni globali dell'editor e impostazioni globali dei file
+            Queste impostazioni sono memorizzate in e file. Le impostazioni predefinite possono essere trovato in:
+                  (Le impostazioni GLOBALI sono sia per l'editor e sia per il tipo file)
+
+            Preferences.sublime-settingsPreferences     = impostazion globali DEL FILE PER L'EDITOR
+            Preferences ({platform}).sublime-settings   = impostazion globali dell'editor PER LA PIATTAFORMA
+
+            Packages/Default
+                  @impostazioni@globali@non.si.trovano??
+                     @non.funziona??
+            I nomi validi per la piattaforma sono , , .Windows Linux OSX 
 
 
+         Impostazioni del tipo di file
+            Se si desidera scegliere come destinazione un tipo di file specifico, assegnare al file un nome in base alla definizione della sintassi del tipo di file. Ad esempio, se la nostra sintassi definizione PYTHON è stato chiamato , avremmo bisogno di chiamare il nostro file di impostazioni ..
+               .sublime-settings
+               Python.tmLanguage
+               Python.sublime-settings
+
+            I file di impostazioni per tipi di file specifici di solito vivono in pacchetti, come Python, ma ci possono essere più file di impostazioni in separati posizioni per lo stesso tipo di file.Packages/Python
+                  @file@di@impostazioni.in@Python
+
+            FILE IMPOSTAZIONI GLOBALI PER PYTHON
+            Analogamente alle impostazioni globali, è possibile stabilire una piattaforma specifica per Impostazioni per i tipi di file. Ad esempio, verrebbe consultato solo sotto Linux.Python (Linux).sublime-settings
+
+            Inoltre, sottolineiamo che solo sotto verrebbe letto, ma non qualsiasi variante.Packages/UserPython.sublime-settingsPython ({platform}).sublime-settings
+
+            IMPOSTAZIONI SPECIFICHE HANNO LA PRECEDENZA SULLE GLOBALI = Indipendentemente dalla sua posizione, qualsiasi file di impostazioni specifiche del tipo di file ha Precedenza su un file di impostazioni globali che influisce sui tipi di file.
+
+         La gerarchia delle impostazioni
+            Di seguito, puoi vedere le fonti di impostazioni esaustive che Sublime Text elaborerebbe per i file Python su Windows. Come sempre, le specifiche successive sostituiscono quelle precedenti.
+
+               Impostazioni globali
+                  Packages/Default/Preferences.sublime-settings
+                  Packages/Default/Preferences (Windows).sublime-settings
+                  Packages/AnyOtherPackage/Preferences.sublime-settings
+                  Packages/AnyOtherPackage/Preferences (Windows).sublime-settings
+                  Packages/User/Preferences.sublime-settings
+
+               Impostazioni dal progetto corrente
+
+               Impostazioni specifiche della sintassi
+                  Packages/Python/Python.sublime-settings
+                  Packages/Python/Python (Windows).sublime-settings
+                  Packages/User/Python.sublime-settings
+
+               Dati di sessione per il file corrente (impostazioni specifiche della visualizzazione)
+
+               Impostazioni regolate automaticamente
+
+               Si noti che i file delle impostazioni possono anche apparire nelle sottodirectory dei pacchetti, che sono stati esclusi per brevità.
+
+         Dove memorizzare le impostazioni utente (ancora una volta)
+               Ogni volta che si desidera salvare le impostazioni, soprattutto se dovrebbero essere conservato tra gli aggiornamenti software, inserire il file corrispondente in ..sublime-settingsPackages/User
+                  @DOVE@SALVARE@LE@IMPOSTAZIONI@UTENTE
       4.1.3.Associazione Tasti
+         Formato file
+            Le associazioni di chiavi sono definite in JSON e memorizzati in file..
+                  sublime-keymap
+            Nello stesso pacchetto, file keymap separati per Linux, OSX e Windows può esistere per una migliore integrazione del sistema operativo.   @come@fare@associazioni@chiavi
+                                 @esempio.di@associazioni@tasti
+
+                                 @KEY@apri@new@windows @key@open@file
+                  (questo esempio di associazione è stato inserito nel file keymap)
+               [
+                  { "keys": ["ctrl+shift+n"], "command": "new_window" },
+                  { "keys": ["ctrl+o"], "command": "prompt_open_file" }
+               ]
+         Definizione e sostituzione delle associazioni di tasti
+         
+            Sublime Text viene fornito con associazioni di tasti predefinite (ad esempio, . Per eseguire l'override delle associazioni di tasti predefinite o aggiungerne di nuovi, Utilizzare un file keymap separato con precedenza superiore: Per esempio.
+                  Packages/Default/Default (Windows).sublime-keymap)       =dovrebbe essere con precedenza superiore
+                  Packages/User/Default (Windows).sublime-keymap
+
+         Associazioni avanzate dei tasti
+
+            Le associazioni di tasti semplici sono costituite da di una sequenza di una o più chiavi mappate a un comando. 
+            Tuttavia, ci sono sintassi più complesse per passare argomenti ai comandi e Limitazione delle associazioni dei tasti a contesti specifici.
+
+               Passaggio di argomenti
+                     Usa la chiave Per specificare gli argomenti:args
+                        (Esempio di associazione complessa CON LA QUALE viene associato al due comandi l'inserimento
+                         di tre new lineq @esempio@associazione@complessa@passaggio@argomenti)
+                        la chiave   = shift+enter
+                        comand      = inserisce l'arghomento passato con arg ossia ----> \n
+
+                           { "keys": ["shift+enter"], "command": "insert", "args": {"characters": "\n"} }
+
+               Contesti
+                  I contesti determinano Se una determinata ASSOCIAZIONE DI CHIAVI È ABILITATA in base alla posizione del caret o qualche altro stato.
+                        esempio di contesto:             @da@comprendere
+
+                           { "keys": ["escape"], "command": "clear_fields", "context":
+                                 [
+                                    { "key": "has_next_field", "operator": "equal", "operand": true }
+                                 ]
+                              }
+
+                  Questa associazione di tasti si traduce in :
+                        cancellare i campi dei frammenti e 
+                        riprendere la normale modifica se è disponibile un campo frammento successivo. 
+                  Pertanto, premendo Esc sarà solo Attiva questa associazione di tasti se stai pedalando attraverso i campi di frammenti.
+
+                  La stessa associazione di tasti può essere mappato a più contesti, Quindi una singola sequenza di pressioni di tasti può produrre risultati diversi in momenti diversi.
+
+               Accordi chiave
+                     @accordi@chiave@esempio
+                     @associazione@composta.da.piu.chiavi
+
+                  È possibile creare associazioni di tasti composto da più chiavi. (unisce ctr+k e ctr+v)
+                        { "keys": ["ctrl+k", "ctrl+v"], "command": "paste_from_history" }
+                              @non@attivato
+
+                  Qui, per attivare il comando , devi prima premere Ctrl K, quindi rilasciare K, e infine premere V.paste_from_history
+
+                        Nota: questo esempio è un'associazione di chiavi predefinita, Quindi puoi provarlo tu stesso.
+
       4.1.4.Menu
+            Sublime Text offre diversi menu che può essere modificato, Ad esempio, aggiungendo voci di menu.
+
+         Formato file
+                  Formato                                Descrizione
+                  Formato                             JSON (con commenti)
+                  Estensione                             .sublime-menu
+                  Nome                             Uno dalla lista dei menu disponibili. Vedere i tipi di menu per l'elenco completo dei nomi e il menu rappresentato da ciascun nome.
+                  Ubicazione                       Qualsiasi sotto Packages
+                  Contenuto                        Un elenco di menu-items
+
+               Esempio
+            Quello che segue è un estratto dal file predefinito.Main.sublime-menu
+
+                  [
+                      {
+                          "caption": "Edit",
+                          "mnemonic": "E",
+                          "id": "edit",
+                          "children":
+                          [
+                              { "command": "undo", "mnemonic": "U" },
+                              { "command": "redo_or_repeat", "mnemonic": "R" },
+                              {
+                                  "caption": "Undo Selection",
+                                  "children":
+                                  [
+                                      { "command": "soft_undo" },
+                                      { "command": "soft_redo" }
+                                  ]
+                              },
+                              { "caption": "-", "id": "clipboard" },
+                              { "command": "copy", "mnemonic": "C" },
+                              { "command": "cut", "mnemonic": "t" },
+                              { "command": "paste", "mnemonic": "P" },
+                              { "command": "paste_and_indent", "mnemonic": "I" },
+                              { "command": "paste_from_history", "caption": "Paste from History" }
+                          ]
+                      }
+                  ]
+
+         Menù disponibili
+
+
+
       4.1.5.Combinazione Colori
 
    5.0.ESTENDIBILITA ED AUTOMAZIONE
@@ -1157,3 +1311,21 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
       5.1.8.Gestoridi Imput
       5.1.9.Frammenti
       5.1.10.Definizione della sintassi ???finre
+
+
+
+   FAQ
+      S
+         scomparsa del menu 
+            A volte i menu scompaiono sulla barra vuol dire che hai disattivato il Togle Menu,
+            e per riattivarlo devi premere i seguenti tasti:
+            attivare il tasto 
+                  ctrl+shift+p ---> scrivere "menu"
+                                    ---> attivare 
+                                          ---> Togle Menu
+                                             ( con Togle Menu disabiliti i menu o li riattivi)
+
+            @riattivare@menu
+            @menu@scomparso
+            @disabilita@menu
+
