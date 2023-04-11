@@ -700,6 +700,7 @@ HELP_SUBLIMETEXT
 SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
     LINK
          https://docs.sublimetext.io/guide/#history
+            @link@sublimetext
 
    1.0.INTRODUZIONE
             Testo sublime (apre una nuova finestra)è un editor di testo versatile, divertente e veloce per codice e prosa che automatizza le attività ripetitive Quindi puoi concentrarti sulle cose importanti. È supportato su macOS, Windows e Linux. La sua versatilità deriva da Una vasta gamma di pacchetti di terze parti sviluppati dalla comunità che forniscono evidenziazione della sintassi, frammenti, o altre automazioni supportate da Pitone (apre una nuova finestra)plugin. La distribuzione predefinita di Sublime Text mira a fornire un insieme di funzionalità di base ma molto funzionale, ma può essere facilmente trasformato in un IDE a tutti gli effetti, se lo si desidera.
@@ -894,7 +895,6 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
                   Progetti - Referenze
                   Documentazione sul formato e le opzioni del file di progetto.
 
-
             Impostazioni relative alla barra laterale e ai progetti
                   binary_file_patterns
                      Elenco di caratteri jolly. I file corrispondenti a questi caratteri jolly verranno visualizzati nella barra laterale, ma sarà escluso da Goto Anything e Trova nei file.
@@ -982,6 +982,178 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA
 
                   Ulteriori comandi di gestione dei riquadri si trova in Visualizza → Layout e relativi sottomenu.
 
+            Riquadri
+               I riquadri sono gruppi di viste. In Sublime Text, puoi avere Più riquadri si aprono contemporaneamente.
+               Principali scorciatoie da tastiera correlate ai riquadri:
+
+                  Descrizione             Scorciatoia
+                  Crea nuovo riquadro     Ctrl K, Ctrl ↑
+                  Chiudi riquadro attivo  Ctrl K, Ctrl ↓
+
+               Ulteriori comandi di gestione dei riquadri si trova in Visualizza → Layout e relativi sottomenu.
 
 
 
+            Cerca e sostituisci
+               Caratteristiche di Sublime Text Due tipi principali di ricerca:
+               File singolo
+               File multipli
+               Entrambi supportano espressioni regolari, Un potente strumento per la ricerca e la sostituzione del testo.
+
+               File singolo
+                  Indagatore
+                     Scorciatoie da tastiera correlate al pannello di ricerca:
+
+                     Descrizione                                                 Scorciatoia
+                     Apri il pannello di ricerca                                 Ctrl F
+                     Attiva/disattiva le espressioni regolari                    Alt R
+                     Attiva/disattiva la distinzione tra maiuscole e minuscole   Alt C
+                     Attiva / disattiva la corrispondenza esatta                 Alt W
+                     Trova il prossimo                                              ⏎
+                     Trova precedente                                              ⇧ ⏎
+                     Trova tutto Alt                                             ⏎
+                     
+               Ricerca incrementale
+                  Tasti di scelta rapida correlati al pannello di ricerca incrementale:
+
+                     Descrizione                                                 Scorciatoia
+                     Apri il pannello di ricerca incrementale                    Ctrl I
+                     Attiva/disattiva le espressioni regolari                    Alt R
+                     Attiva/disattiva la distinzione tra maiuscole e minuscole   Alt C
+                     Attiva / disattiva la corrispondenza esatta                 Alt W
+                     Trova il prossimo                                           ⏎
+                     Trova precedente                                            ⇧ ⏎
+                     Trova tutto                                                 Alt ⏎
+
+
+                  L'unica differenza tra questo pannello e il normale pannello di ricerca sta nel comportamento del tasto ⏎. Nelle ricerche incrementali, selezionerà la corrispondenza successiva nel file e chiudi il pannello di ricerca per te. Scegliere tra questo pannello o il normale pannello di ricerca è una questione di preferenze.
+
+               Sostituzione del testo
+                     Tasti di scelta rapida relativi al pannello di sostituzione:
+
+                        Descrizione                            Scorciatoia
+                        Apri il pannello di sostituzione          Ctrl H
+                        Sostituisci successivo                    Ctrl ⇧ H
+                        Sostituisci tutto                         Ctrl Alt ⏎
+                  Suggerimenti
+                  Altri modi di cercare nei file
+                  Goto Anything fornisce l'operatore per eseguire la ricerca nel file filtrato.#
+
+                  Altre associazioni di tasti correlate alla ricerca
+
+                  Queste associazioni di tasti funzionano Quando il pannello di ricerca è nascosto:
+
+                        Descrizione                                                          Scorciatoia
+                        Ricerca in avanti utilizzando il modello più recente                    F3
+                        Ricerca all'indietro utilizzando il modello più recente                 ⇧ F3
+                        Seleziona tutte le corrispondenze utilizzando il modello più recente    Alt F3
+                  Ricerca multilinea
+                  È possibile digitare modelli di ricerca multiriga nei pannelli di ricerca. Per immettere caratteri di nuova riga, premere CTRL ⏎.
+
+                  Si noti che anche i pannelli di ricerca sono ridimensionabili.
+
+               File multipli
+               Indagatore
+                     Tasti di scelta rapida correlati a Trova nei file:
+
+                     Descrizione                                                 Scorciatoia
+                     Apri Trova nei file                                         Ctrl ⇧ F
+                     Attiva/disattiva le espressioni regolari                    Alt R
+                     Attiva/disattiva la distinzione tra maiuscole e minuscole   Alt C
+                     Attiva/disattiva le corrispondenze esatte                    Alt W
+                     Trova il prossimo                                           Enter
+                     
+               Ambito di ricerca
+
+                     Campo Dove in Trova nei file Limita l'ambito di ricerca. È possibile definire gli ambiti in diversi modi:
+
+                        Aggiunta di singole directory (percorsi in stile Unix, anche su Windows)
+                        Aggiunta/esclusione di file basati su caratteri jolly
+                        Aggiunta di posizioni simboliche (, ...)<open folders><open files>
+                        È anche possibile combinare questi filtri usando virgole; Per esempio:
+
+
+               Formato dei risultati
+                     Nel pannello di ricerca, è possibile personalizzare Come vengono visualizzati i risultati. Queste sono le opzioni disponibili:
+
+                     Mostra in vista separata
+                     Mostra contesto
+
+               Navigazione dei risultati
+                     Se la ricerca restituisce corrispondenze, È possibile spostarsi attraverso la sequenza utilizzando le seguenti associazioni di tasti:
+
+                     Descrizione                   Scorciatoia
+                        Prossima partita              F4
+                        Partita precedente            ⇧ F4
+                        Partita aperta                 ⏎
+
+                     Puoi anche fare doppio clic sulle linee con una partita.
+
+               Espressioni regolari
+                  Le espressioni regolari trovano modelli complessi nel testo. Per sfruttare appieno i vantaggi delle strutture di ricerca e sostituzione in Sublime Text, dovresti almeno imparare le basi delle espressioni regolari. In questa guida Non spiegheremo come usare le espressioni regolari.
+
+                     Il termine espressione regolare è solitamente abbreviato in regexp o regex.
+
+                     Ecco come potrebbe apparire una regex:
+                           (?:Sw|P)i(?:tch|s{2})\s(?:it\s)?of{2}!
+
+                     Per usare espressioni regolari in Sublime Text, devi prima attivarli in i vari pannelli di ricerca. In caso contrario, i termini di ricerca verranno interpretati letteralmente.
+
+   4.0.PERSONALIZZAZIONE
+      4.1.1.Panoramica
+            Sublime Text può essere completamente personalizzato. Nei seguenti argomenti, viene illustrato il Opzioni più comuni. In particolare, non trattiamo temi, un'area immensamente configurabile di Sublime Text.
+
+               Impostazioni
+               Associazioni di tasti
+               Menu
+               Combinazioni di colori
+
+
+      4.1.2.Impostazioni
+            Sublime Text memorizza i dati di configurazione in file. La flessibilità ha il prezzo di un sistema leggermente complesso per l'applicazione Impostazioni. TUTTAVIA, ECCO UNA REGOLA EMPIRICA:.SUBLIME-SETTINGS
+
+            Inserisci sempre i tuoi FILE DELLE IMPOSTAZIONI PERSONALI sotto garantire che AVRANNO LA PRECEDENZA su qualsiasi altra impostazione in conflitto ﬁle.Packages/User
+               @file@personali@precenza@package@user
+
+            Detto questo, sveliamo, per compiacere i lettori masochisti, I misteri di come funzionano le impostazioni.
+
+         Formato
+            I file di impostazioni utilizzano JSON e hanno l'estensione..sublime-settings
+
+         Tipi di impostazioni
+            Il nome di ogni file ne determina lo scopo. Nomi possono essere descrittivi (come o ), oppure possono essere correlati a ciò che le impostazioni Il file sta controllando. Ad esempio, le impostazioni del tipo di file devono contenere il Nome della definizione della sintassi per il tipo di file. Quindi, per Il tipo di file, la cui definizione della sintassi è contenuta in , i file di impostazioni corrispondenti verrebbero chiamati ..sublime-settingsPreferences (Windows).sublime-settingsMinimap.sublime-settings.tmLanguage.pyPython.tmLanguagePython.sublime-settings
+
+            Inoltre, alcuni file di impostazioni si applicano solo a piattaforme specifiche. Questo può essere dedotto dai nomi dei file, ad esempio . I nomi validi per la piattaforma sono , , .Preferences ({platform}).sublime-settingsWindowsLinuxOSX
+
+            Questo è importante: i file di impostazioni specifici della piattaforma nella cartella vengono ignorati. In questo modo, puoi essere sicuro di un singolo Il file delle impostazioni sostituisce tutti gli altri.
+               Packages/User
+
+            Le modifiche alle impostazioni vengono solitamente aggiornate in tempo reale, ma potrebbe essere necessario riavviare Sublime Text per caricare nuovi file di impostazioni.
+
+
+         Come accedere e modificare i file delle impostazioni comuni
+            A meno che tu non abbia bisogno di un controllo granulare sulle impostazioni, puoi accedere i principali file di configurazione tramite le 
+               Preferenze | Impostazioni- Utente e 
+               preferenze | Impostazioni 
+               - Altre voci di menu. Modifica delle preferenze | Impostazioni 
+
+            - L'impostazione predefinita è sconsigliata, perché le modifiche verrà ripristinato con ogni aggiornamento del software. Tuttavia, è possibile utilizzare Quel file di riferimento: contiene commenti che spiegano lo scopo di Tutte le impostazioni globali e del tipo di file disponibili.
+
+         Ordine di precedenza d
+
+
+      4.1.3.Associazione Tasti
+      4.1.4.Menu
+      4.1.5.Combinazione Colori
+
+   5.0.ESTENDIBILITA ED AUTOMAZIONE
+      5.1.1.Estensione di testo sublime
+      5.1.2.Tavolozza dei comandi
+      5.1.3.Comandi
+      5.1.4.Completamenti
+      5.1.5.Macro
+      5.1.6.Pacchetti
+      5.1.7.Plug in
+      5.1.8.Gestoridi Imput
+      5.1.9.Frammenti
+      5.1.10.Definizione della sintassi ???finre
