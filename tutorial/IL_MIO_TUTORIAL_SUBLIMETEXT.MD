@@ -77,6 +77,7 @@ HELP_SUBLIMETEXT
 								prv = PackageResouceViewer
 
 						Ctrl + P e selezionare
+<<<<<<< HEAD
 								poi selezione
 								OpenResourceView
 
@@ -87,6 +88,11 @@ HELP_SUBLIMETEXT
 								@vedi--->@cambia@selezione@testo@selection_foreground
 											@CAMBIA@COLORE@TESTO@SELEZIONATO
 
+=======
+								poi selezioner
+								OpenResourceView
+
+>>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
 
 //commenti
 				APERTURA VELOCE CAMBIO COLORI DI SELEZIONE TESTO

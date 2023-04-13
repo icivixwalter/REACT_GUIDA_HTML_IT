@@ -83,7 +83,11 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 						@file@schema@costruzione
 
 
+<<<<<<< HEAD
 			4.1.1.Esempio (Example)
+=======
+				4.1.1.Esempio (Example)
+>>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
 						Di seguito è riportato un esempio del formato di un file con schema di colori .sublime. Una combinazione di colori completa avrà molte più regole per coprire lo standard nomi di ambito.
 							 ES
 								 	{
@@ -115,6 +119,7 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 									    ]
 									}
 
+<<<<<<< HEAD
 			4.1.2.Colori (Colors)
 					I colori nelle combinazioni di colori possono essere specificati utilizzando uno dei sette formati:	@combinazione.di.colori @colori.7.formati
 											@file@schema@colori
@@ -462,6 +467,22 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 			4.1.5.Regole di ambito (Scope Rules)
 			4.1.6.Personalizzazione (Customization)
 			4.1.7.Appendice: Colori CSS (Appendix: CSS Colors)
+=======
+				4.1.2.Colori (Colors)
+
+						@file@schema@colori
+
+
+				4.1.3.Variabili (Variables)
+						È possibile creare definizioni di colore riutilizzabili nella chiave. I nomi può essere qualsiasi stringa che utilizza i caratteri , , e . I valori possono essere qualsiasi formato di colore valido.variablesa-zA-Z0-9_-
+
+						È possibile fare riferimento alle variabili nelle impostazioni e nelle regole globali, tramite il comando sintassi. Nell'esempio seguente viene illustrata la variabile di base uso:var(example_var_name)
+						@schema@variabili
+				4.1.4.Impostazioni globali (Global Settings)
+				4.1.5.Regole di ambito (Scope Rules)
+				4.1.6.Personalizzazione (Customization)
+				4.1.7.Appendice: Colori CSS (Appendix: CSS Colors)
+>>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
 		
 		4.2.Temi **
 		
