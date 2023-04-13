@@ -77,9 +77,22 @@ HELP_SUBLIMETEXT
 								prv = PackageResouceViewer
 
 						Ctrl + P e selezionare
+<<<<<<< HEAD
+								poi selezione
+								OpenResourceView
+
+						TESTO SELEZIONATO = PER CAMBIARE LE IMPOSTAZIONI personali della selezione testo che si trovano nella cartella USER e per il tipo di schema colori, come ad esempio per lo schema Monokai bisogna aprire il file con lo stesso nome ma salvato nella directory User,
+						Monokai.sublime-color-scheme e cambiare o aggiungere alle variabili globali il colore
+						scelto con la variabile selection_foreground.
+
+								@vedi--->@cambia@selezione@testo@selection_foreground
+											@CAMBIA@COLORE@TESTO@SELEZIONATO
+
+=======
 								poi selezioner
 								OpenResourceView
 
+>>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
 
 //commenti
 				APERTURA VELOCE CAMBIO COLORI DI SELEZIONE TESTO
