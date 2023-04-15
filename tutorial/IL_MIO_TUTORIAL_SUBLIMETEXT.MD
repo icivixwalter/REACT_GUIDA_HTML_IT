@@ -924,9 +924,9 @@ HELP_SUBLIMETEXT
 				@git@tutorial_(il tutorila per git si trova qui:
 						https://git-scm.com/docs/git-add)
 
-	per aggiungere il nuovo FARE 3 comandi dos
+		1) per aggiungere il nuovo FARE 3 comandi dos
 		git add .
-				Aggiungi il contenuto del file all'indice
+				Aggiungi il contenuto del file all'indice (vedi comando add .)
 					git_add
 						comando + opzioni
 								git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
@@ -1069,25 +1069,9 @@ HELP_SUBLIMETEXT
 								status
 									todo : da finire ***(da finire)
 											https://git-scm.com/docs/git-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--v
-
-						git status
-							Il comando può essere utilizzato per ottenere un riepilogo di cui I file presentano modifiche che vengono eseguite per il commit successivo.
-						warning
+									git status
+											Il comando può essere utilizzato per ottenere un riepilogo di cui I file presentano modifiche che vengono eseguite per il commit successivo.
+							warning
 								warning: in the working copy of 'REACT_GUIDA_HTML.sublime-workspace', LF will be replaced by CRLF the next time Git touches it 
 								avvertimento: nella copia di lavoro di 'REACT_GUIDA_HTML.sublime-workspace', LF sarà sostituito da CRLF la prossima volta che Git lo toccherà
 
