@@ -943,9 +943,148 @@ HELP_SUBLIMETEXT
 						git add -f
 							Il comando non aggiungerà i file ignorati per impostazione predefinita. Se ce ne sono I file ignorati sono stati specificati in modo esplicito nella riga di comando, avranno esito negativo con un elenco di file ignorati. File ignorati raggiunti da ricorsione della directory o globbing del nome del file eseguito da Git (cita il tuo globi prima del guscio) saranno silenziosamente ignorati. Il comando git add può essere utilizzato per aggiungere file ignorati con l'opzione (forza -f ).
 						OPTIONS
-							.... continuare su
-									todo: da finire su questa linea
-										https://git-scm.com/docs/git-add
+						
+										@opzioni@git-add
+										@git.add@opzioni
+
+								path
+									File da cui aggiungere contenuti. Fileglobs (ad es. *.c) può essere dato per aggiungere tutti i file corrispondenti. 
+									Anche un Nome della directory principale (ad es. dir to add dir/file1 and dir/file2 ) può essere dato per aggiornare l'indice a corrispondere allo stato corrente della directory nel suo complesso 
+									(ad es. Specificando dir non verrà registrato dir/file1 solo un file modificato nell'albero di lavoro, ma un file aggiunto a l'albero di lavoro, ma anche un file rimosso da l'albero di lavoro). 
+									Si noti che le versioni precedenti di Git utilizzavano ignorare i file rimossi; Usa l'opzione --no- all se vuoi per aggiungere file modificati o nuovi ma ignorare quelli rimossi.
+								-n
+								--dry-run
+									In realtà non aggiungere i file, mostra solo se esistono e / o lo faranno essere ignorato.
+
+								--verbose
+									Sii prolisso.
+								-f
+								--force
+									Consenti l'aggiunta di file altrimenti ignorati
+
+								--sparse
+									Consenti l'aggiornamento delle voci di indice al di fuori del cono di checkout sparse. Normalmente, rifiuta di aggiornare le voci di indice i cui percorsi lo fanno. non rientrano nel cono di pagamento sparse, poiché tali file potrebbero essere rimossi dall'albero di lavoro senza preavviso. Vedi git-sparse-checkout[1] per maggiori dettagli.
+
+								-i
+								--interactive
+									Aggiungere contenuto modificato nell'albero di lavoro in modo interattivo a l'indice. È possibile fornire argomenti di percorso facoltativi per limitare su un sottoinsieme dell'albero di lavoro. Vedere "Interattivo" mode" per i dettagli. add --interactive
+											@git@vedi.dettagli_(esempio con git add --interactive)
+
+								-p
+								--patch
+									(Attenzione path significa aggiusta)
+									Scegli in modo interattivo pezzi di patch tra l'indice e il Albero di lavoro e aggiungerli all'indice. Questo dà all'utente una possibilità Per esaminare la differenza prima di aggiungere contenuto modificato alla finestra di dialogo indice.
+									Questo funziona in modo efficace  add --interactive ma bypassa il Menu di comando iniziale e passa direttamente al patch Vedere "Modalità interattiva" per i dettagli.
+
+
+								-e
+								--edit
+									Apri il diff rispetto all'indice in un editor e lascia che l'utente modificarlo. Dopo la chiusura dell'editor, regolare le intestazioni hunk e applicare la patch all'indice.
+
+									Lo scopo di questa opzione è selezionare e scegliere le linee della patch da applicare, o anche per modificare il contenuto delle righe da mettere in scena. Questo può essere Più veloce e flessibile rispetto all'utilizzo del selettore hunk interattivo. Tuttavia, è facile confondersi e creare una patch che non lo fa applicare all'indice. Vedere MODIFICA DELLE PATCH di seguito.
+
+
+									Aggiorna l'indice solo dove ha già una corrispondenza di voce <pathspec>. In questo modo vengono rimosse e modificate le voci di indice in corrispondono all'albero di lavoro, ma non aggiungono nuovi file.
+								-u
+								--update
+									Se non viene fornito alcun <pathspec> quando si utilizza l'opzione -u, tutti I file tracciati nell'intero albero di lavoro vengono aggiornati (versioni precedenti di Git utilizzato per limitare l'aggiornamento alla directory corrente e alla sua sottodirectory).
+
+
+								-A
+								--all
+								--no-ignore-removal
+									Aggiornare l'indice non solo dove l'albero di lavoro ha un file corrispondente <pathspec> ma anche dove l'indice ha già un entrata. In questo modo vengono aggiunte, modificate e rimosse le voci di indice in Corrispondenza dell'albero di lavoro.
+
+									Se non viene fornito alcun <pathspec> quando si utilizza l'opzione, -A tutti I file nell'intero albero di lavoro vengono aggiornati (versioni precedenti di Git utilizzato per limitare l'aggiornamento alla directory corrente e alla sua sottodirectory).
+
+								--no-all
+								--ignore-removal
+									Aggiornare l'indice aggiungendo nuovi file sconosciuti al Indice e file modificati nell'albero di lavoro, ma ignorati File rimossi dall'albero di lavoro. Questo è una no-op quando non viene utilizzato alcun <pathspec>.
+
+									Questa opzione serve principalmente ad aiutare gli utenti che sono abituati a versioni di Git, il cui "git add <pathspec>... " era un sinonimo per "git add --no-all <pathspec>... ", cioè ignorava i file rimossi.
+
+								-N
+								--intent-to-add
+
+									Registrare solo il fatto che il percorso verrà aggiunto in seguito. Una voce perché il percorso viene inserito nell'indice senza contenuto. Questo è utile per, tra le altre cose, mostrare il contenuto non messo in scena di tali file con e commettendoli con commit -a.
+
+								--refresh
+
+									Non aggiungere i file, ma solo aggiornare il loro stat() informazioni nell'indice.
+
+
+								--ignore-errors
+									Se non è stato possibile aggiungere alcuni file a causa di errori di indicizzazione loro, non interrompere l'operazione, ma continuare ad aggiungere il Altri. Il comando deve comunque uscire con uno stato diverso da zero. La variabile di configurazione dd.ignoreErrors può essere impostata su true per rendere questo il comportamento predefinito.
+
+								--ignore-missing
+
+									Questa opzione può essere utilizzata solo insieme a --dry-run. Utilizzando Questa opzione l'utente può verificare se uno qualsiasi dei file specificati sarebbe essere ignorati, non importa se sono già presenti nell'opera albero o no.
+
+
+								--no-warn-embedded-repo
+									Per impostazione predefinita "git add", avvisa quando si aggiunge un incorporato repository all'indice senza utilizzare  git submodule add to Creare una voce in .gitmodules . Questa opzione sopprimerà il avviso (ad esempio, se si eseguono manualmente operazioni su sottomoduli).
+
+								--renormalize
+									Applica il processo "pulito" a tutti i file tracciati a Aggiungerli di nuovo forzatamente all'indice. Questo è utile dopo Modifica della configurazione core.autocrlf o dell'attributo text per correggere i file aggiunti con terminazioni di riga CRLF/LF errate. Questa opzione implica -u. I caratteri CR solitari sono intatti, quindi mentre un CRLF pulisce in LF, una sequenza CRCRLF è solo parzialmente pulito a CRLF.
+
+								--chmod=(+|-)x
+									Eseguire l'override del bit eseguibile dei file aggiunti. L'eseguibile bit viene modificato solo nell'indice, i file su disco vengono lasciati inalterato.
+
+
+								--pathspec-from-file=<file>
+									Pathspec viene passato in <file> al posto degli arg della riga di comando. Se il <file> è esattamente - Quindi viene utilizzato l'input standard. Pathspec gli elementi sono separati da LF o CR/LF. Gli elementi Pathspec possono essere Citato come spiegato per la variabile di configurazione core.quotePath Vedi anche --pathspec-file-nul and global --literal-pathspecs.
+
+								--pathspec-file-nul
+									Significativo solo con --pathspec-from-file. Gli elementi Pathspec sono separati con carattere NUL e tutti gli altri caratteri vengono presi letteralmente (comprese le nuove righe e le citazioni).
+
+								--
+									Questa opzione può essere utilizzata per separare le opzioni della riga di comando da l'elenco dei file, (utile quando i nomi dei file potrebbero essere errati per le opzioni della riga di comando).
+
+
+							EXAMPLES
+									Aggiunge contenuto da tutti i file nella directory e le sue sottodirectory:
+										git add Documentation/\*.txt
+
+
+									Si noti che l'asterisco * è citato dalla shell in questo esempio; Ciò consente al comando di includere i file da sottodirectory di Documentation/ directory.
+
+									Considera l'aggiunta di contenuti da tutti gli script git-*.sh:
+											 git add git-*.sh
+
+								 	Perché questo esempio consente alla shell di espandere l'asterisco (cioè sei elencando esplicitamente i file), non considera 
+								 			subdir/git-foo.sh.
+
+				 			INTERACTIVE MODE
+				 				Quando il comando entra in modalità interattiva, mostra il output del sottocomando status, quindi entra nella sua ciclo di comandi interattivo.
+
+								Il ciclo di comandi mostra l'elenco dei sottocomandi disponibili e dà un prompt "What now> ". In generale, quando termina il prompt Con un solo >, puoi scegliere solo una delle scelte fornite e digitare return, in questo modo:
+										    *** Commands ***
+      										1: status       2: update       3: revert       4: add untracked
+      										5: patch        6: diff         7: quit         8: help
+    										What now> 1
+
+								Si potrebbe anche dire s o sta o status purché il La scelta è unica.
+
+
+								status
+									todo : da finire ***(da finire)
+											https://git-scm.com/docs/git-add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-v
+
 						git status
 							Il comando può essere utilizzato per ottenere un riepilogo di cui I file presentano modifiche che vengono eseguite per il commit successivo.
 						warning
