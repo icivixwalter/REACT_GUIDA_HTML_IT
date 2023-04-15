@@ -9,6 +9,11 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 			LINK: https://www.sublimetext.com/docs/color_schemes.html#example
 					@documentazione@ufficiale
 
+			
+			
+
+					
+
 	1.USAGE (USO)
 		Selezione multipla della scheda
 

@@ -921,8 +921,20 @@ HELP_SUBLIMETEXT
 				
 ### GIT_COMANDI_DOS
 				@git@cmd_(comandi dos)
-				@git@tutorial_(il tutorila per git si trova qui:
-						https://git-scm.com/docs/git-add)
+				@git@tutorial_(il tutorial per git si trova qui:
+						https://git-scm.com/docs/git-add
+						)
+
+					i libro di tutorial si trova qui:
+				C:\\CASA\\LINGUAGGI\\GIT_DEKTOPO\\TUTORIAL\tutorial_(progit).pdf
+					puoi attivarlo copiando questo comando DOS  su terminale:
+
+					Poswer shel apertura di un file:
+					Invoke-Item 'C:\CASA\LINGUAGGI\GIT_DESKTOP\TUTORIAL\tutorial_(progit).pdf'
+
+					DOS cmd:
+					Start "apri tutorial" C:\CASA\LINGUAGGI\GIT_DESKTOP\TUTORIAL\tutorial_(progit).pdf
+						
 
 		1) per aggiungere il nuovo FARE 3 comandi dos
 		git add .
@@ -1080,6 +1092,8 @@ HELP_SUBLIMETEXT
 
 		git push   						
 					= salva sulla rete
+
+		esempio git add. git commit -m "messagio" git push
 
 ### GIT_CREARE_UN_PROGETTO_NUOVO
 	come creare un nuova repositori con git con riga di comando:
