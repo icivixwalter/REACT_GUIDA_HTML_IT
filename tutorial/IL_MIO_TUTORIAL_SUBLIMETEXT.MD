@@ -1,9 +1,8 @@
-PATH_PROGETTO
+path_progetto
 	c:\CASA\LINGUAGGI\SUBLIMETEXT\TutorialeSublimeText\ps
 
 HELP_SUBLIMETEXT
-   A
-		ASSOCIAZIONE TASTI
+   A		ASSOCIAZIONE TASTI
 				Associazioni di tasti
 				Per creare associazioni di tasti personalizzate, vai su Preferenze > Associazioni di tasti e modifica il lato destro, ad esempio inserendo quanto segue:
 				
@@ -16,6 +15,7 @@ HELP_SUBLIMETEXT
 				{ "keys": ["ctrl+3"], "command": "focus_group", "args": { "group": 2 } },
 				{ "keys": ["ctrl+4"], "command": "focus_group", "args": { "group": 3 } },
 				{ "keys": ["ctrl+5"], "command": "focus_group", "args": { "group": 4 } },
+						@ctrl+@focus_(comando focus del gruppo ma cosa ?????)
 
 				Il primo binding di tasti creato sopra è "Shift-Alt-M" che, quando attivato mentre un file Markdown è aperto e a fuoco (cioè il tuo cursore è nel file Markdown, non in un file diverso che è aperto), renderà quel file e lo visualizzerà nel tuo browser
 				Le altre cinque associazioni chiave create sopra sostituiscono semplicemente il conflitto creato dal pacchetto MarkdownEditing
@@ -38,20 +38,15 @@ HELP_SUBLIMETEXT
 				è piu veloce
 
 				https://coderwall.com/p/8g1new/vi-mode-in-sublime-text
-		caret
+			
+			caret
 			Note
 				??
-
-
-
 		CAMBIARE IL COLORE DELLO SFONDO
 				Preferences
 						Select Color Scheme
 								scegliere uno degli sfondi previsti..
 								Celeste, Mariana, Monokai ecc..
-						
-				
-
 		CAMBIARE IL COLORE DELLA SELEZIONE
 				Bisogna installare un package control eseguendo queste operazioni:
 				  @cambiare.il@colore.della@selezione
@@ -77,7 +72,7 @@ HELP_SUBLIMETEXT
 								prv = PackageResouceViewer
 
 						Ctrl + P e selezionare
-<<<<<<< HEAD
+
 								poi selezione
 								OpenResourceView
 
@@ -88,13 +83,10 @@ HELP_SUBLIMETEXT
 								@vedi--->@cambia@selezione@testo@selection_foreground
 											@CAMBIA@COLORE@TESTO@SELEZIONATO
 
-=======
+
 								poi selezioner
 								OpenResourceView
-
->>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
-
-//commenti
+				//commenti
 				APERTURA VELOCE CAMBIO COLORI DI SELEZIONE TESTO
 					Preferences--->
 						cancella tutto e scrivere
@@ -102,64 +94,102 @@ HELP_SUBLIMETEXT
 								Page controll ---->
 								Open Resource  ---->  
 										Color-Scheme-default -----> Monokai.sublime-color-scheme
+		CTRL+K,CTRL+1
+					@ctrl+k@ctrl+1_(comando di apertura delle cartelle e sub cartelle)  
+					@ctrl+k@ctrl+n
+						v.d.---> @menu@edit_(vedi menu edit)
+
+			comando di apertura e chiusura dei livelli
+				ELENCO-COMANDI_CTRL+K+N
+					CTRL+K+N
+						COMANDI DI APERTURA E CHIUSURA DEI LIVELLI --> CTRL+K E CTRL+N
+						Sono i comandi di apertura e chiusura dei livelli con il comando ed il parametro
+						command : fold_by_level
+						args	: n	
+
+						si trova nella directory USER con il file DI TIPO .sublime-keymap
+
+						C:\Users\icivi\AppData\Roaming\Sublime Text\Packages\User
+						Default (Windows).sublime-keymap
+
+						COMANDI E CHIAVI 
+						
+						{ "keys": ["ctrl+k", "ctrl+1"], "command": "fold_by_level", "args": {"level": 1} },
+						{ "keys": ["ctrl+k", "ctrl+2"], "command": "fold_by_level", "args": {"level": 2} },
+						{ "keys": ["ctrl+k", "ctrl+3"], "command": "fold_by_level", "args": {"level": 3} },
+						{ "keys": ["ctrl+k", "ctrl+4"], "command": "fold_by_level", "args": {"level": 4} },
+						{ "keys": ["ctrl+k", "ctrl+5"], "command": "fold_by_level", "args": {"level": 5} },
+						{ "keys": ["ctrl+k", "ctrl+6"], "command": "fold_by_level", "args": {"level": 6} },
+						{ "keys": ["ctrl+k", "ctrl+7"], "command": "fold_by_level", "args": {"level": 7} },
+						{ "keys": ["ctrl+k", "ctrl+8"], "command": "fold_by_level", "args": {"level": 8} },
+						{ "keys": ["ctrl+k", "ctrl+9"], "command": "fold_by_level", "args": {"level": 9} },
+						{ "keys": ["ctrl+k", "ctrl+0"], "command": "unfold_all" },
+						{ "keys": ["ctrl+k", "ctrl+j"], "command": "unfold_all" },
+						{ "keys": ["ctrl+k", "ctrl+t"], "command": "fold_tag_attributes" },
+						
+						
+
    K
-	  Default Key Bindings
+	   Default Key Bindings
 											https://rowannicholls.github.io/sublime_text/key_bindings.html
-											@KEY@chiavi
+		   @KEY@chiavi
+			Azioni
+	  		Action                     macOS                         Windows & Linux         Same?
+	  		Next tab in group          Ctrl+PgDn or Alt+Cmd+Right    Ctrl+PgDn               Yes
+	  		Previous tab in group      Ctrl+PgUp or Alt+Cmd+Left     Ctrl+PgUp               Yes
+	  		Go to file in project      Cmd+P or Cmd+T Ctrl+P         Cmd/Ctrl                swap
+	  		Go to text in file         Cmd+R Ctrl+R                  Cmd/Ctrl                swap
+	  		Open file                  Cmd+O Ctrl+O                  Cmd/Ctrl                swap
+	  		New tab                    Cmd+N Ctrl+N                  Cmd/Ctrl                swap
+	  		Close tab                  Cmd+W Ctrl+W                  Cmd/Ctrl                swap
+	  		Re-open last closed        Shift+Cmd+T                   Shift+Ctrl+T            Cmd/Ctrl swap
+	  		Command palette            Shift+Cmd+P                   Shift+Ctrl+P            Cmd/Ctrl swap
+	  		Quick switch project       Ctrl+Cmd+P                    Ctrl+Alt+P              No
+	  		Cursor to end of line      Cmd+Right                     End                     No
+	  		Cursor to start of line    Cmd+Left                      Home                    No
+	  		Cursor to end of file      Cmd+Up or End (Fn+Right)      Ctrl+End                No
+	  		Cursor to start of file    Cmd+Down or Home (Fn+Left)    Ctrl+Home               No
+	  		Cursor to end of word      Alt+Right                     Ctrl+Right              No
+	  		Cursor to start of word    Alt+Left                      Ctrl+Left               No
+	  		Cursor to end of subword   Doesn’t work                  Alt+Right               No
+	  		Cursor to start of subword Doesn’t work                  Alt+Left                No
+	  		Swap lines                 Ctrl+Cmd+Up/Down     
+	  		Focus on group             Ctrl+1/2/3/4                  Ctrl+1/2/3/4            Yes
+	  		Move tab to group          Ctrl+Shift+1/2/3/4            Ctrl+Shift+1/2/3/4      Yes
+	  		Number of groups           Doesn’t work                  Shift+Alt+1/2/3/4/5     No
+	  		Scroll page down           PgDn (Fn+Down)                PgDn                    Yes
+	  		Scroll page up             PgUp (Fn+Up)                  PgUp                    Yes
+	  		Save                       Cmd+S Ctrl+S                  Cmd/Ctrl                swap
+	  		Save all                   Alt+Cmd+S                     None                    No
+	  		Undo                       Cmd+Z Ctrl+Z                  Cmd/Ctrl                swap
+	  		Redo                       Shift+Cmd+Z                   Ctrl+Y                  No
+	  		Find and Replace           Alt+Cmd+F                     Ctrl+H                  No
+	  		Toggle side bar            Cmd+K, Cmd+B                  Ctrl+K, Ctrl+B Cmd/Ctrl swap
+	  		Toggle spell check         F6 (Fn+F6)                    F6                      Yes
+	  		Toggle full screen         Ctrl+Cmd+F                    F11                     No
+	  		Indent                     Cmd+[ Ctrl+[                  Cmd/Ctrl                swap
+	  		Outdent                    Cmd+] Ctrl+]                  Cmd/Ctrl                swap
+	  		Select next instance       Cmd+D Ctrl+D                  Cmd/Ctrl                swap
 
-	  Action                     macOS                         Windows & Linux         Same?
-	  Next tab in group          Ctrl+PgDn or Alt+Cmd+Right    Ctrl+PgDn               Yes
-	  Previous tab in group      Ctrl+PgUp or Alt+Cmd+Left     Ctrl+PgUp               Yes
-	  Go to file in project      Cmd+P or Cmd+T Ctrl+P         Cmd/Ctrl                swap
-	  Go to text in file         Cmd+R Ctrl+R                  Cmd/Ctrl                swap
-	  Open file                  Cmd+O Ctrl+O                  Cmd/Ctrl                swap
-	  New tab                    Cmd+N Ctrl+N                  Cmd/Ctrl                swap
-	  Close tab                  Cmd+W Ctrl+W                  Cmd/Ctrl                swap
-	  Re-open last closed        Shift+Cmd+T                   Shift+Ctrl+T            Cmd/Ctrl swap
-	  Command palette            Shift+Cmd+P                   Shift+Ctrl+P            Cmd/Ctrl swap
-	  Quick switch project       Ctrl+Cmd+P                    Ctrl+Alt+P              No
-	  Cursor to end of line      Cmd+Right                     End                     No
-	  Cursor to start of line    Cmd+Left                      Home                    No
-	  Cursor to end of file      Cmd+Up or End (Fn+Right)      Ctrl+End                No
-	  Cursor to start of file    Cmd+Down or Home (Fn+Left)    Ctrl+Home               No
-	  Cursor to end of word      Alt+Right                     Ctrl+Right              No
-	  Cursor to start of word    Alt+Left                      Ctrl+Left               No
-	  Cursor to end of subword   Doesn’t work                  Alt+Right               No
-	  Cursor to start of subword Doesn’t work                  Alt+Left                No
-	  Swap lines                 Ctrl+Cmd+Up/Down     
-	  Focus on group             Ctrl+1/2/3/4                  Ctrl+1/2/3/4            Yes
-	  Move tab to group          Ctrl+Shift+1/2/3/4            Ctrl+Shift+1/2/3/4      Yes
-	  Number of groups           Doesn’t work                  Shift+Alt+1/2/3/4/5     No
-	  Scroll page down           PgDn (Fn+Down)                PgDn                    Yes
-	  Scroll page up             PgUp (Fn+Up)                  PgUp                    Yes
-	  Save                       Cmd+S Ctrl+S                  Cmd/Ctrl                swap
-	  Save all                   Alt+Cmd+S                     None                    No
-	  Undo                       Cmd+Z Ctrl+Z                  Cmd/Ctrl                swap
-	  Redo                       Shift+Cmd+Z                   Ctrl+Y                  No
-	  Find and Replace           Alt+Cmd+F                     Ctrl+H                  No
-	  Toggle side bar            Cmd+K, Cmd+B                  Ctrl+K, Ctrl+B Cmd/Ctrl swap
-	  Toggle spell check         F6 (Fn+F6)                    F6                      Yes
-	  Toggle full screen         Ctrl+Cmd+F                    F11                     No
-	  Indent                     Cmd+[ Ctrl+[                  Cmd/Ctrl                swap
-	  Outdent                    Cmd+] Ctrl+]                  Cmd/Ctrl                swap
-	  Select next instance       Cmd+D Ctrl+D                  Cmd/Ctrl                swap
+  			General key mapping
+	  		The following are general key mappings on a Mac keyboard:
+			 Key                        Mac keyboard mapping
+			 PgUp                       Fn+Up
+			 PgDn                       Fn+Down
+			 Home                       Fn+Left
+			 End                        Fn+Right
+			 Delete                     Fn+Back
+	   
+	   	Le Associazioni Tasti dei pacchetti
+				  The following are key bindings created by certain packages:
+				  Di seguito sono le associazioni di tasti create da determinati pacchetti:
 
-
-	  The following are general key mapppings on a Mac keyboard:
-		 Key                        Mac keyboard mapping
-		 PgUp                       Fn+Up
-		 PgDn                       Fn+Down
-		 Home                       Fn+Left
-		 End                        Fn+Right
-		 Delete                     Fn+Back
-	  The following are key bindings created by certain packages:
-	  Di seguito sono le associazioni di tasti create da determinati pacchetti:
-   
-	  Package                       Action                           macOS            windows & Linux
-	  SublimeREPL                   Run current Python file          Ctrl+Alt+P        Ctrl+Alt+P
-	  Markdown Table Formatter      Align columns in Markdown tables Shift+Ctrl+Alt+T  Shift+Ctrl+Alt+T
-	 
-	  Custom Key Bindings
+					
+						  Package                       Action                           macOS            windows & Linux
+						  SublimeREPL                   Run current Python file          Ctrl+Alt+P        Ctrl+Alt+P
+						  Markdown Table Formatter      Align columns in Markdown tables Shift+Ctrl+Alt+T  Shift+Ctrl+Alt+T
+		 
+	  		Custom Key Bindings
    
 		 This section details the custom key bindings I use in my Sublime Text
 		 To create custom key bindings, go to Preferences > Key Bindings and edit the right-hand-side
@@ -171,21 +201,21 @@ HELP_SUBLIMETEXT
 		 Vale la pena creare un backup di questo file (Default.sublime-keymap). Quindi, quando installerai Sublime Text su un nuovo computer, puoi semplicemente incollare queste associazioni di tasti.
 			@associazioni@tasti@personalizzate@default
 		 
+			Associazioni Tasti keymap 
 		 
-		 
-		 Package           Action                     macOS, Windows & Linux
-		 None              Save all open files        Ctrl+Alt+S
-		 MarkdownPreview   Render Markdown            Shift+Alt+M
-		 SublimeREPL       Run Python in SublimeREPL  Shift+Ctrl+Alt+P
-		 None              Run Python in Build System Shift+Alt+P
-		 LatexTools        Run Latex                  Shift+Alt+L
-		 None              Run R                      Shift+Alt+R
-		 None              Run R Markdown             Shift+Alt+D
-		 None              Run Bash                   Shift+Alt+B
-		 Terminus          Open terminal here         Shift+Alt+T
-		 Pretty JSON       Make JSON more readable    Ctrl+Alt+J
-		 
-		 Here’s my Default.sublime-keymap file that implements the above key bindings:
+				 Package           Action                     macOS, Windows & Linux
+				 None              Save all open files        Ctrl+Alt+S
+				 MarkdownPreview   Render Markdown            Shift+Alt+M
+				 SublimeREPL       Run Python in SublimeREPL  Shift+Ctrl+Alt+P
+				 None              Run Python in Build System Shift+Alt+P
+				 LatexTools        Run Latex                  Shift+Alt+L
+				 None              Run R                      Shift+Alt+R
+				 None              Run R Markdown             Shift+Alt+D
+				 None              Run Bash                   Shift+Alt+B
+				 Terminus          Open terminal here         Shift+Alt+T
+				 Pretty JSON       Make JSON more readable    Ctrl+Alt+J
+				 
+			Here’s my Default.sublime-keymap file that implements the above key bindings:
 			Ecco il mio file Default.sublime-keymap che implementa le combinazioni di tasti di cui sopra:
 			modello
 			[
@@ -257,12 +287,14 @@ HELP_SUBLIMETEXT
 				{ "keys": ["ctrl+alt+j"], "command": "pretty_json" }
 			]
 		 
-		 Default.sublime-keymap
+			Default.sublime-keymap
 			
 			Use the ‘default’ Default.sublime-keymap file (ie the one the opens up on the left-hand side when you go to Preferences > Key Bindings) to figure out what commands exist and how to re-bind them. Also take a look at the key bindings documentation.
 		   
 			Usa il file Default.sublime-keymap "predefinito" (ovvero quello che si apre sul lato sinistro quando vai su Preferenze> Associazioni tasti) per capire quali comandi esistono e come riassociarli. Dai anche un'occhiata alla documentazione sui collegamenti dei tasti.
-   I
+   	
+
+   I  
 		IMPOSTAZIONI
 				Note
 					https://www.sublimetext.com/docs/settings.html
@@ -297,6 +329,7 @@ HELP_SUBLIMETEXT
 
 					2) Impostazioni dell'interfaccia utente: GLOBALI -> queste impostazioni influiscono sull'utente generale , su tutte le finestre aperte. Gli esempi includono , e . Queste impostazioni sono presentato nella seconda sezione del file delle impostazioni predefinite.themeanimation_enabledoverlay_scroll_bars
 						@INTERFACCIA@IMPOSTAZIONI
+						@impostazioni@interfaccia@utente
 
 					3) Impostazioni del comportamento dell'applicazione: GLOBALI -> queste impostazioni influiscono sul comportamento del applicazione, su tutte le finestre aperte. Gli esempi includono , e . Queste impostazioni sono presentate nella Terza sezione del file delle impostazioni predefinite.hot_exitindex_filesignored_packages
 						@APPLICAZIONE@IMPOSTAZIONI
@@ -477,14 +510,12 @@ HELP_SUBLIMETEXT
 
 				  VEDERE ANCHE LE ESTENSIONE VINTAGE.              
    P
-	PREFERENZE
+   	PREFERENZE
 		 Attenzione le preferenze si trovano in questo file Preferences.sublime-settings
 			aprire
 			   Preference ---> Browser Package
 				  e trovare il file dentro la cartella User
-
-
-	PAROLE_CHIAVE
+	 	PAROLE_CHIAVE
 			Note
 				Tutte le parole chiave di impostazione di sublime text @PAROLE@CHIAVE
 
@@ -605,10 +636,10 @@ HELP_SUBLIMETEXT
 				  Questo plugin estende le funzionalità della sidebar. Di default, tramite tasto destro su file e cartelle, non è possibile fare granché. Il plugin aggiunge una serie di comandi utili per velocizzare le classiche operazioni sui file.
 					  @estensione@gestione@file  @windows@file@gestione
    T
-	TEMI
+		TEMI
 		
 		MONOKAI EXTENDED
-			Per utilizzare il tema predefinito di Sublime con la combinazione di colori Sublime Monokai Extended. Ho sia opzioni chiare che scure, entrambe con un grande. Uso Menlo come faccia del mio carattere. Ho anche aumentato la dimensione del carattere fino a , e ho aggiunto un po 'di riempimento delle linee per rendere il codice più spazioso e facile da scansionare.15
+			Per utilizzare il tema predefinito di Sublime con la combinazione di colori Sublime MONOKAI Extended. Ho sia opzioni chiare che scure, entrambe con un grande. Uso Menlo come faccia del mio carattere. Ho anche aumentato la dimensione del carattere fino a , e ho aggiunto un po 'di riempimento delle linee per rendere il codice più spazioso e facile da scansionare.15
 				https://gomakethings.com/my-sublime-text-setup-for-front-end-web-development/
 					OK_INCLUSA
 
@@ -679,9 +710,63 @@ HELP_SUBLIMETEXT
 						https://www.mfuentesg.dev/SyncSettings/
 						
 
-  FAQ
-	  S
-		 scomparsa del menu 
+  LE FAQ FINALI
+	A
+	C
+
+	L
+	  		Livelli di testo Raggruppamento
+	  			NEL MENU EDIT ----> Code folding viene attivato o disattivato il comando per il livelli di testo viene attivata la con il comando 
+	  					command": "fold_by_level"
+				che permmette il raggruppamento del testo mentre 
+
+	  				@raggruppamento@livelli.di.testo_(faq: LIVELLI DI TESTO come viene attivato il ragruppamento, le chiavi. )
+	  				@menu@Edit--->Code Folding_(raggruppamento)
+	  
+		M
+			MENU SUBLIME TEX
+					chiavi di ricerca @..
+						@menu@sublimeText
+						@Menu@Edit_(Faq il menu Edit)
+						@
+
+				File
+					....
+							@File@Menu
+				Edit
+					...
+							@Edit@Menu
+
+					Code Folding
+						Con il code folding
+									@Edit@Code@Folding@SottoMenu1_(faq: sotto menu di edit per il raggruppamemento)
+				Selection
+							@Selection@Menu
+					Code Folding
+							Apro i gruppi di testo o disattivo i gruppi di testo
+									@Selection@Code@Folding
+				Find
+							@Find@Menu
+				View
+							@View@Menu
+				Goto
+							@Goto@Menu
+				Tools
+							@Tools@Menu
+				Project
+							@Project@Menu
+				Preferences
+							@Prefernces@Menu
+				Help
+							@Help@Menu
+
+
+					
+	R
+	  		Raggruppamento livelli di testo
+	  			vd. @raggruppamento@livelli.di.testo_(faq: raggruppamento dei livelli di testo )
+	S
+	 		scomparsa del menu 
 			A volte i menu scompaiono sulla barra vuol dire che hai disattivato il Togle Menu,
 			e per riattivarlo devi premere i seguenti tasti:
 			attivare il tasto 
@@ -693,5 +778,287 @@ HELP_SUBLIMETEXT
 			@riattivare@menu
 			@menu@scomparso
 			@disabilita@menu
+
+
+
+
+		 select
+		 		
+
+
+
+
+
+## COME CREARE FAQ SU DOMANDE PRINCIPALI
+
+### LE FUNZIONI ARROW E NORMALI
+	Come creare una funzione arrow e quella normale:
+		// funzione arrow
+				this.setState((state, props) => ({
+				counter: state.counter + props.increment
+				}));
+
+
+		
+		// funzione normale
+			this.setState(function(state, props) {
+			return {
+			counter: state.counter + props.increment
+			};
+			});
+### LE COSTANTI ESPRESSIONI JFX
+
+	1) ES = COSTANTE STRINGA
+		creo una costante stringa semplice
+		const name = 'Giuseppe Verdi';
+			
+	2) ES = CREO UN ELEMENTO CON H1 + STRINGA + RISULTATO FUNZIONE
+			creo un elemento con  h1 + stringa + il risultato di una funzione chiamata
+			const element = <h1>Hello, {name}</h1>;
+	
+	3) ES = CREA UNA ELEMENTO ELEMENTO H1 + STRINGA + RISULTATO DELLA FUNZIONE CHIAMATA
+		Questa è sempre una  ESSRESSIONE JAVA SCRIPT DENTRO LE GRAFFE COMPOSTA DA 
+		un elemento html h1 		+
+		una stringa = hello 		+
+		da una stringa formatata con {formatName(user)
+			{formatName(user), RESTITUISCE il risultato della chiamata alla 
+			descritta in {} la  quale  combina due costanti e le restituisce.
+			
+			const element = (
+				<h1>
+					Hello, {formatName(user)}!
+				</h1>
+				);
+				
+		//qui creo sempre una costante e tra parenti {} inserisco espressioni javascript tipo firstName
+		const user = {
+		firstName: 'Giuseppe',
+		lastName: 'Verdi'
+		};
+		
+		ES: CREATA  LA FUNZIONE DA CHIAMARE
+		function formatName(user) {
+		return user.firstName + ' ' + user.lastName;
+		}
+### SPECIFICARE ATTRIBUTI CON JFX
+	ATTRIBUTI CON VIRGOLETTE
+		 const element = <a href="https://www.reactjs.org"> link </a>;
+
+	ATTRIBUTI CON PARENTESI GRAFFE SPECIFICANDO UNA ESPRESSIONE JavaScript
+		 const element = <img src={user.avatarUrl}></img>;
+### SEPARATORE A LINEE ROSSE
+	CREARE UN SEPARATORE DI LINEE COLORATO NEL PROGETTO
+	  @codice--->CREARE_UN_SEPARATORE = creare un separatore il linee rosse
+### TAG
+		TAG VUOTI
+			Se un tag è vuoto, puoi chiuderlo immediatamente con />, come in XML:
+			const element = <img src={user.avatarUrl} />;
+		TAG CON FIGLI
+			I tag JSX possono contenere figli:
+
+				const element = (
+					  <div>
+					    <h1>Hello!</h1>
+					    <h2>Good to see you here.</h2>
+					  </div>
+					);
+### TEXAREA-CASELLA-DI-TESTO
+		@casella@di@testo@texarea.(casella di testo)
+			come creare una casella di testo in react:
+				vedere questo codice @CASELLA@DI@TESTO@textArea.(per vedere il codice sviluppato)
+### CSS ED EVENTO BUTTON
+	Come creare una classe .css, applicarla ad un componente es. button.
+
+
+			APPLICAZIONE ALL'INTERNO DI UN FILE .TXT
+				Note
+					Nell'elemnto button vengono effettuati 2 richiami:
+						<button className="btn" onClick={() => setCount((count) => count + 1)}>
+				count is {count}
+			</button>
+
+						className="btn"
+					e questo richiama la classe .css costruita per i button.
+
+					onClick={() => setCount((count) => count + 1)
+						questo è l'evento button e la funzione richiamata
+
+
+				Per applicare la classe .css al button occorre costruire un file 
+				index.css in cui viene costruito la parte grafica del button denomando
+				l'elemento in 
+					button {......}
+						Esempio .css per il button
+
+								/*//BUTTON MODELLO PER TUTTO*/
+								/*//=======================================================//*/
+								
+								button {
+								border-radius: 8px;
+								border: 4px solid transparent;
+								padding: 0.6em 1.2em;
+								font-size: 1em;
+								font-weight: 500;
+								font-family: inherit;
+								background-color: #1a1a1a;
+								cursor: pointer;
+								transition: border-color 0.25s;
+								}
+								/*hover = mouse sopra*/
+								button:hover {
+								border-color: #ea0009;
+								}
+								button:focus,
+								button:focus-visible {
+								outline: 4px auto -webkit-focus-ring-color;
+								}
+								
+								/*//=======================================================//*/
+								
+						
+				ATTENZIONE nel file css, puoi anche
+
+				
+### GIT_COMANDI_DOS
+				@git@cmd_(comandi dos)
+				@git@tutorial_(il tutorila per git si trova qui:
+						https://git-scm.com/docs/git-add)
+
+	per aggiungere il nuovo FARE 3 comandi dos
+		git add .
+				Aggiungi il contenuto del file all'indice
+					git_add
+						comando + opzioni
+								git add [--verbose | -v] [--dry-run | -n] [--force | -f] [--interactive | -i] [--patch | -p]
+		  						[--edit | -e] [--[no-]all | --[no-]ignore-removal | [--update | -u]] [--sparse]
+		  						[--intent-to-add | -N] [--refresh] [--ignore-errors] [--ignore-missing] [--renormalize]
+		  						[--chmod=(+|-)x] [--pathspec-from-file=<file> [--pathspec-file-nul]]
+		  						[--] [<pathspec>…​]
+						DESCRIPTION
+							Questo comando aggiorna l'indice utilizzando il contenuto corrente disponibile in l'albero di lavoro, per preparare il contenuto messo in scena per il commit successivo. In genere aggiunge il contenuto corrente dei percorsi esistenti nel loro complesso, ma con alcune opzioni può anche essere utilizzato per aggiungere contenuti con solo una parte delle modifiche apportate ai file dell'albero di lavoro applicati, oppure Rimuovete i tracciati che non esistono più nell'albero di lavoro.
+		
+							L'"indice" contiene un'istantanea del contenuto dell'albero di lavoro e è questo snapshot che viene preso come contenuto del commit successivo. Così dopo aver apportato modifiche all'albero di lavoro e prima di eseguire Il comando commit, è necessario utilizzare il comando per aggiungere qualsiasi nuovo o File modificati nell'indice.add
+		
+							Questo comando può essere eseguito più volte prima di un commit. E 'solo Aggiunge il contenuto dei file specificati nel momento in cui il comando Aggiungi è Correre; Se si desidera includere le modifiche successive nel commit successivo, È necessario eseguire nuovamente per aggiungere il nuovo contenuto all'indice.
+						git add -f
+							Il comando non aggiungerà i file ignorati per impostazione predefinita. Se ce ne sono I file ignorati sono stati specificati in modo esplicito nella riga di comando, avranno esito negativo con un elenco di file ignorati. File ignorati raggiunti da ricorsione della directory o globbing del nome del file eseguito da Git (cita il tuo globi prima del guscio) saranno silenziosamente ignorati. Il comando git add può essere utilizzato per aggiungere file ignorati con l'opzione (forza -f ).
+						OPTIONS
+							.... continuare su
+									todo: da finire su questa linea
+										https://git-scm.com/docs/git-add
+						git status
+							Il comando può essere utilizzato per ottenere un riepilogo di cui I file presentano modifiche che vengono eseguite per il commit successivo.
+						warning
+								warning: in the working copy of 'REACT_GUIDA_HTML.sublime-workspace', LF will be replaced by CRLF the next time Git touches it 
+								avvertimento: nella copia di lavoro di 'REACT_GUIDA_HTML.sublime-workspace', LF sarà sostituito da CRLF la prossima volta che Git lo toccherà
+
+		git commit -m "messaggio"	
+					= salva su disco
+
+		git push   						
+					= salva sulla rete
+
+### GIT_CREARE_UN_PROGETTO_NUOVO
+	come creare un nuova repositori con git con riga di comando:
+		1) cd directory in cui creare
+			attenzione se la directori gia esiste impostare il cd.. fuori di una posizione
+		2) git init REACT_CONCETTI_CHIAVE
+		3) git add .
+		4) git commit -m "messaggio del commit	
+		5) git push <remote_name> <branch_name>
+			   Es. react        origin
+			   
+			   su https://github.com/icivixwalter
+			   passw walter_01_
+			   		@git@utenza_(UTENZA PER GIT HUB)
+			   		@git@create@project_(git come creare un nuovo progetto da locale a GitHup )
+### EVENTI
+		Per gli eventi ci sono 2 possibilita
+			UTILIZZO DI BIND
+
+											class Interruttore extends React.Component {
+														constructor(props) {
+														super(props);
+														this.state = {acceso: true};
+														
+														// Necessario per accedere al corretto valore di `this` all'interno della callback
+														//ATTENZINE ad utilizzare bind per l'associazione e passarlo a onclick??
+														this.handleClick = this.handleClick.bind(this);
+														}
+														
+														handleClick() {
+														this.setState(prevState => ({
+															acceso: !prevState.acceso
+														}));
+														}
+														
+														render() {
+														return (
+															<button onClick={this.handleClick}>
+															{this.state.acceso ? 'Acceso' : 'Spento'}
+															</button>
+														);
+														}
+														}
+
+
+			PROPRIETA PUBBLICHE DELLA CLASSE
+
+											
+										class LoggingButton extends React.Component {
+														//SINTASSI DELLE PROPRIETA PUBBLICHE DELLE CLASSI 
+														//ed associare il callback
+														// This syntax ensures `this` is bound within handleClick.
+														handleClick = () => {
+														console.log('this is:', this);
+														};
+														render() {
+														return (
+															<button onClick={this.handleClick}>
+															Clicca qui
+															</button>
+														);
+														}
+														}
+
+
+					class LoggingButton extends React.Component {
+														// This syntax ensures `this` is bound within handleClick.
+														handleClick = () => {
+														console.log('this is:', this);
+														};
+														render() {
+														return (
+															<button onClick={this.handleClick}>
+															Clicca qui
+															</button>
+														);
+														}
+														}
+### ERRORI
+    #### Errori su React
+			IntelliJ IDEA sta segnalando un errore TS2339 perché non riconosce il metodo “setState” che stai utilizzando nel tuo progetto. Questo potrebbe essere dovuto al fatto che il plugin Deno non è configurato correttamente.
+
+			Per risolvere questo problema, puoi provare a installare il plugin TypeScript per IntelliJ IDEA e assicurarti di avere le definizioni dei tipi React installate nel tuo progetto. Puoi farlo eseguendo il comando npm install @types/react @types/react-dom --save-dev nella tua cartella di progetto.
+			
+			Inoltre, potresti voler verificare che la tua versione di TypeScript sia aggiornata alla versione più recente.
+			
+			Spero che questo ti aiuti! Fammi sapere se hai altre domande. 
+
+	####	Errori su Vite
+				per partire
+					Task dev deno run -A --node-modules-dir npm:vite
+
+				ma questo errore 
+					Cannot read properties of undefined (reading 'bold')
+					10:46:01 [vite] Internal server error: Cannot read properties of undefined (reading 'bold')
+					Plugin: vite:react-babel
+
+					con chatgpt ho trovato questa soluzione.
+					nella directory del progetto 
+						 C:\CASA\LINGUAGGI\HTML\PROGETTI_HTML\REACT_CONCETTI_CHIAVE\Project\react-concetti-chiave 
+						 digitare deno info
+						 e 		 deno update
+						 e fa l'aggiornamento.
 
 

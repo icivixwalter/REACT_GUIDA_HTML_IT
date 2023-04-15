@@ -77,6 +77,8 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 						Gli schemi di colori Sublime Text sono implementati utilizzando 
 								file 
 									.sublime-color-scheme, 
+										@sublime-color-scheme_(sviluppo pacchetti la personalizzazione dei colori)
+
 						contenenti JSON. Sublime Text supporta anche un sottoinsieme di funzionalità utilizzando il formato .tmTheme di TextMate. Prima del Sublime Testo 3.1, era supportato solo il formato
 						 		.tmTheme.
 
@@ -321,6 +323,7 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 															file:
 																Monokai.sublime-color-scheme
 																	@impostazione@personali@colori
+																	@sublime-color-scheme = personalizzazione dei colori_(cambiare le impostazioi dei colori)
 
 													Per accedere a queste IMPOSTAZIONI PERSONALI occorre aprire il file
 													con 	Preferences--->Browse Packages ---> User ---> Monokai.sublime-color-scheme
@@ -692,5 +695,5 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 				LE PERSONALIZZAZIONI	
 						si trovano nella cartella User ed i file sono:
 
-				personalizzazioni dei colori						: Monokai.sublime-color-scheme
+				personalizzazioni dei colori						: Monokai.sublime-color-scheme_(riassunto personalizzazioni)
 				pacchetto di controllo								: Package Control.sublime-settings
