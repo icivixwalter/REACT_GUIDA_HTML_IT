@@ -9,7 +9,7 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 			LINK: https://www.sublimetext.com/docs/color_schemes.html#example
 					@documentazione@ufficiale
 
-	1.USO
+	1.USAGE (USO)
 		Selezione multipla della scheda
 
 		Integrazione Git
@@ -32,7 +32,7 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 
 		Progetti **
 
-	2.PERSONALIZZAZIONE
+	2.CUSTOMIZATION (PERSONALIZZAZIONE)
 		Impostazioni
 
 		Associazioni di tasti
@@ -51,7 +51,7 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 
 		Modelli di file **
 
-	3.MISTO
+	3.MISCELLANEOUS (MISTO)
 		GPU Rendering
 		
 		Compatibilità del sistema operativo
@@ -68,26 +68,26 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 		
 		Legature **
 
-	4.SVILUPPO.DI.PACCHETTI
-		4.1.Combinazioni di colori (Color Schemes)
-	
-				COMBINAZIONE DEI COLORI CONTROLLA I COLORI E GLI STILI: L'evidenziazione del CODICE SORGENTE E DELLA PROSA in Sublime Text è controllata da un combinazione di colori. Una combinazione di colori assegna COLORI E STILI DI CARATTERE agli AMBITI, che sono assegnati al testo dalla sintassi. 
+	4.PACKAGE DEVELOPMEN (SVILUPPO.DI.PACCHETTI )
+		4.1.COLOR SCHEMES (COMBINAZIONI DI COLORI) 
+					NOTE
+						Versione: dev 4.0 3.2 3.1 3.0
+						L'evidenziazione del codice sorgente e della prosa in Sublime Text è controllata da un combinazione di colori. Una combinazione di colori assegna colori e stili di carattere agli ambiti, che sono assegnati al testo dalla sintassi. Il resto dell'aspetto dell'utente L'interfaccia è controllata dal tema. Il tema controlla tale Elementi come pulsanti selezionano elenchi, barra laterale e schede.
 
-				TEMA CONTROLLA IL RESTO =	Il resto dell'aspetto dell'utente L'interfaccia è controllata dal tema. Il tema controlla tale Elementi come pulsanti selezionano elenchi, barra laterale e schede.
+						Gli schemi di colori Sublime Text sono implementati utilizzando 
+								file 
+									.sublime-color-scheme, 
+						contenenti JSON. Sublime Text supporta anche un sottoinsieme di funzionalità utilizzando il formato .tmTheme di TextMate. Prima del Sublime Testo 3.1, era supportato solo il formato
+						 		.tmTheme.
+
+									@gli.schemi.si.trovano.qui  @file@schema
+									@file@schema@costruzione
+
+
+
 			
-				IL FILE DEGLI SCHEMI  = Gli schemi di colori Sublime Text sono implementati utilizzando 
-				il file 
-					.sublime-color-scheme, 
-				contenenti JSON. Sublime Text supporta anche un sottoinsieme di funzionalità utilizzando il formato .tmTheme di TextMate. Prima del Sublime Testo 3.1, era supportato solo il formato .tmTheme
-						@gli.schemi.si.trovano.qui  @file@schema
-						@file@schema@costruzione
-
-
-<<<<<<< HEAD
 			4.1.1.Esempio (Example)
-=======
-				4.1.1.Esempio (Example)
->>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
+
 						Di seguito è riportato un esempio del formato di un file con schema di colori .sublime. Una combinazione di colori completa avrà molte più regole per coprire lo standard nomi di ambito.
 							 ES
 								 	{
@@ -118,10 +118,9 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 								        }
 									    ]
 									}
-
-<<<<<<< HEAD
 			4.1.2.Colori (Colors)
-					I colori nelle combinazioni di colori possono essere specificati utilizzando uno dei sette formati:	@combinazione.di.colori @colori.7.formati
+
+					I colori nelle combinazioni di colori possono essere specificati utilizzando uno dei sette formati:		@file@schema@colori @combinazione.di.colori @colori.7.formati
 											@file@schema@colori
 
 						1) formato Hex RGB
@@ -160,10 +159,6 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 
 								3179
 								regolatore min-contrast() (proprietario: modifica un colore per garantire un rapporto di contrasto minimo rispetto a un colore "di sfondo". Il primo parametro è il colore per calcolare nuovamente il contrasto, lo "sfondo" e il secondo è un numero decimale che specifica il rapporto di contrasto minimo. Valori tipici per l'intervallo di rapporti di contrasto da a . Garantire un Rapporto di contrasto di 2,5 sullo sfondo: 2.04.5color(var (base_green) min-contrast(var(bg_color) 2.5))
-
-
-
-
 			4.1.3.Variabili (Variables)
 						È possibile creare definizioni di colore riutilizzabili nella chiave. I nomi può essere qualsiasi stringa che utilizza i caratteri , , e . I valori possono essere qualsiasi formato di colore valido.variablesa-zA-Z0-9_-  @creazione@variabili.per.la.definizione@di@colori
 
@@ -207,10 +202,7 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 									        }
 									    ]
 									}
-
-
-
-
+				-----------------------------------------------------
 			4.1.4.Impostazioni globali (Global Settings)
 							
 							IMPOSTAZIONI_GLOBALI	(Global Settings)					
@@ -218,35 +210,25 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 											Le seguenti impostazioni globali vengono inserite nell'oggetto con la chiave."globals"
 																	@colori@globals@settings
 												(Nelle variabili create per la definizione dei colori LE IMPOSTAZIONI GLOBALI riguardano:)
-
-									background
+									background (sfondo)
 										"Sfondo" Colore di sfondo predefinito.
-
-									foreground
+									foreground (primo piano)
 										"Primo piano" Colore predefinito per il testo.
-
-									invisibles
+									invisibles (invisibile)
 										"Invisibili" Colore per gli spazi vuoti, quando viene eseguito il rendering. Se non specificato, il valore predefinito è il primo piano con un'opacità pari a 0,35.
-
-									caret
-										"caret" Il colore del caret
-
-									block_caret
+									caret (cursore)
+										 Il colore del caret (cursore)
+									block_caret (blocco del cursore)
 										Il colore del cursore quando si utilizza un cursore a blocchi
-
-									block_caret_border
+									block_caret_border (co)
 										colore del bordo per un punto di inserimento del blocco
-
-									block_caret_underline
+									block_caret_underline 
 										Il colore della sottolineatura del punto di osservazione del blocco viene disegnato come quando si sovrappone a una selezione
-
-									"block_caret_corner_style" 
+									block_caret_corner_style 
 
 										Lo stile degli angoli da utilizzare per i carretti a blocchi. Le opzioni includono: (impostazione predefinita) o .roundcutsquare
-
 									block_caret_corner_radius
 										Raggio da utilizzare quando è o .block_caret_corner_styleroundcut
-
 									line_highlight
 
 										Colore di sfondo della riga contenente il cursore. Utilizzato solo quando l'impostazione highlight_line è abilitata.
@@ -446,45 +428,251 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 										Il colore dell'ombra utilizzato per mostrare quando un'area di testo può essere orizzontale a spirale.
 									shadow_width
 										Larghezza dell'ombra in pixel indipendenti dal dispositivo.
-							REGOLE_DI_AMBITO (Scope Rules)**
-								Note
-										Le combinazioni di colori interagiscono con il testo di un file tramite ambiti. Gli ambiti sono impostati su codice o token di prosa tramite la sintassi.
-										Gli ambiti sono stringhe punteggiate, specificate dal meno al più specifico. Ad esempio, la parola chiave in PHP potrebbe essere specificato tramite il nome dell'ambito		@regole@di@ambito
-											.ifkeyword.control.php
-
-
-								Abbinamento
-								Denominazione
-								Regole di stile
-								Evidenziazione della sintassi con hash
-								Esempi						
 
 							PERSONALIZZAZIONE **						
 							APPENDICE COLORI CSS **						
-
-
-
+				-----------------------------------------------------			
 			4.1.5.Regole di ambito (Scope Rules)
+											
+								
+								Regole di ambito (Scope Rules)
+									Le COMBINAZIONI DI COLORI interagiscono con il testo di un file tramite ambiti. Gli AMBITI sono impostati su codice o token di prosa tramite la sintassi. GLI AMBITI SONO STRINGHE PUNTEGGIATE, specificate dal meno al più specifico. 
+									Ad esempio, la parola chiave in PHP potrebbe essere specificato tramite il nome dell'ambito 
+												.ifkeyword.control.php
+													@regola@di@ambito
+													@cosa@sono@gli@ambiti
+
+
+
+								MATCHING (Abbinamento)
+									Le combinazioni di colori applicano colori e stili di carattere agli ambiti facendo corrispondere il punteggiato etichette, a partire dalla prima. La corrispondenza dei prefissi è il modo standard per avere un La combinazione di colori si applica a più sintassi. Invece di corrispondere, la maggior parte delle combinazioni di colori assegnerà invece un colore a . La corrispondenza delle prime una o due etichette in un ambito è più comune. L'inclusione dell'etichetta finale, il nome della sintassi, è rara a meno che un Si desidera eseguire l'override specifica della sintassi.keyword.control.phpkeyword
+
+
+
+								Denominazione
+										L'autore di sintassi può assegnare qualsiasi ambito desideri a un determinato token. Questo combinato con il fatto che ci sono centinaia di sintassi mantenute dalla comunità significa che può essere difficile sapere quali ambiti prendere di mira. La denominazione degli ambiti è stata stabilita per consentire agli autori di sintassi e combinazioni di colori di utilizzare un insieme comune, per migliore interoperabilità. La sezione Combinazioni di colori fornisce un Set di ambiti di base che gli autori di combinazioni di colori devono sforzarsi di gestire.		
+																@DENOMINAZIONE@DEGLI@AMBITI
+
+								Regole di stile
+											STYLE RULES
+													Ogni regola di stile dell'ambito è costituita da un oggetto contenente chiave, insieme con una o più delle seguenti chiavi facoltative:"scope"
+
+																	(@CHIAVI@DELLE@REGOLE@DI@AMBITO)
+													name 
+																Nome (arbitrario) della regola di ambito.
+														
+													foreground	(Primo piano)
+																Colore del testo.
+													
+													
+													background
+																Colore di sfondo.
+
+													foreground_adjust
+																Una regolazione del colore, valida solo con ."foreground""background"
+
+													selection_foreground
+																Colore del testo selezionato.
+													font_style
+																Zero o più degli elementi seguenti, separati da spazi:
+
+
+																		bold
+																		italic
+																		glow      4050
+																		underline 4074
+																		stippled_underline 4075
+																		squiggly_underline 4075
+
+																La chiave accetta un elenco separato da spazi di regolatori che sono supportati dal colore minihtml. È solo supportato quando viene specificata anche la chiave e consente quindi modifica di tutti i primi piani utilizzati in combinazione con lo sfondo, senza dover creare regole diverse per ogni permutazione.
+																		"foreground_adjust""background"
+
+															
+
+										Evidenziazione della sintassi con hash (HASHED SYNTAX HIGHLIGHTING)
+											
+											La chiave supporta una modalità speciale denominata Sintassi hash Evidenziazione, in cui ogni token corrispondente all'ambito specificato riceverà un colore univoco da una o più sfumature. Alcuni editori si riferiscono a questo stile di evidenziazione come evidenziazione semantica."foreground"
+															@chiave@sintassi@hash
+
+											Per utilizzare l'evidenziazione della sintassi con hash, la chiave deve avere un valore Si tratta di una matrice di due o più colori. Sublime Text creerà 256 diversi Colori che sono interpolazioni lineari (lerp) tra i colori forniti. Le l'interpolazione viene eseguita nello spazio HSL."foreground"
+															@utilizzo@sintassi@hash
+
+											Poiché Sublime Text evidenzia i token in un file, creerà un valore hash del token e utilizzarlo per scegliere una delle 256 interpolazioni lineari. Ogni l'istanza di un determinato token utilizzerà lo stesso colore. Ad esempio, ogni istanza di avrebbe lo stesso colore, ma ogni istanza di avrebbe un colore diverso.first_namename
+
+											Affinché l'evidenziazione della sintassi con hash sia più evidente, la differenza di tonalità tra I punti di inizio e di arrivo dovrebbero essere il più distanti possibile. Ecco un esempio dell'uso di blu, viola e rosa per i nomi delle variabili:
+
+												{
+					    								"scope": "source - punctuation - keyword",
+					    								"foreground": ["hsl(200, 60%, 70%)", "hsl(330, 60%, 70%)"]
+													}
+
+
+								Esempi (EXAMPLES)						
+											La seguente regola di stile dell'ambito colorerà tutte le stringhe come verdi:
+													 @esempio@di@stile   @esempi@di@stile
+																	{
+																	    "name": "Strings",				//nome della regola d'ambito
+																	    "scope": "string",				//chiave facoltativa
+																	    "foreground": "#00FF00"
+																	}
+											Per applicare uno stile a tutti i numeri come grassetto, corsivo rosso, utilizzare:  @esempio@di@stile
+
+													{
+													       "name": "Numbers",						//nome della regola d'ambito
+														    "scope": "constant.numeric",
+														    "foreground": "#FF0000",
+														    "font_style": "bold italic"				//stile
+														}
+				-----------------------------------------------------
 			4.1.6.Personalizzazione (Customization)
+							Le combinazioni di colori basate sul formato 
+									.sublime-color-scheme 
+							sono specificate da Solo nome file, non un percorso di file basato su pacchetto. Ciò consente agli utenti di personalizzare un combinazione di colori sovrascrivendo variabili o globali e aggiungendo regole.  
+								(esempio NELLA CARTELLA USER è stato creato un file di personalizzazione del tema
+									Monokai creando una compi del file con estensione sublime-color-scheme e
+									si chiama ----> Monokai.sublime-color-scheme)
+
+											@dove@si@trovano@le@personalizzazioni@dei@colori
+											@personalizzazione@file@sublime-color-scheme
 			4.1.7.Appendice: Colori CSS (Appendix: CSS Colors)
-=======
-				4.1.2.Colori (Colors)
+				Appendice: Colori CSS
+				Appendix: CSS Colors
+				aliceblue
+				antiquewhite
+				aqua
+				aquamarine
+				azure
+				beige
+				bisque
+				black
+				blanchedalmond
+				blue
+				blueviolet
+				brown
+				burlywood
+				cadetblue
+				chartreuse
+				chocolate
+				coral
+				cornflowerblue
+				cornsilk
+				crimson
+				cyan
+				darkblue
+				darkcyan
+				darkgoldenrod
+				darkgray
+				darkgreen
+				darkgrey
+				darkkhaki
+				darkmagenta
+				darkolivegreen
+				darkorange
+				darkorchid
+				darkred
+				darksalmon
+				darkseagreen
+				darkslateblue
+				darkslategray
+				darkslategrey
+				darkturquoise
+				darkviolet
+				deeppink
+				deepskyblue
+				dimgray
+				dimgrey
+				dodgerblue
+				firebrick
+				floralwhite
+				forestgreen
+				fuchsia
+				gainsboro                                                 
+				ghostwhite
+				gold
+				goldenrod
+				gray
+				green
+				greenyellow
+				grey
+				honeydew
+				hotpink
+				indianred
+				indigo
+				ivory
+				khaki
+				lavender
+				lavenderblush
+				lawngreen
+				lemonchiffon
+				lightblue
+				lightcoral
+				lightcyan
+				lightgoldenrodyellow
+				lightgray
+				lightgreen
+				lightgrey
+				lightpink
+				lightsalmon
+				lightseagreen
+				lightskyblue
+				lightslategray
+				lightslategrey
+				lightsteelblue
+				lightyellow
+				lime
+				limegreen
+				linen
+				magenta
+				maroon
+				mediumaquamarine
+				mediumblue
+				mediumorchid
+				mediumpurple
+				mediumseagreen
+				mediumslateblue
+				mediumspringgreen
+				mediumturquoise
+				mediumvioletred
+				midnightblue
+				mintcream
+				mistyrose
+				moccasin 				
+		4.2.THEMES (TEMI) todo: da finire !!
 
-						@file@schema@colori
+					Format
+						Un file .sublime-theme contiene un singolo documento JSON. Il documento dovrebbe essere un oggetto contenente una chiave rules (regole) con il valore di 3179 una serie di regole. Una chiave opzionale "variabili" con un oggetto È possibile aggiungere coppie variabili/valore. 3179	
+								(il file di formato contiene una CHIAVE RULES con valore 3179  come ad esempio
+									dentro la cartella USER il file : Default Dark.sublime-theme)
+								
+								@file@formato @crea@file@formato
 
+						Di seguito è riportato un esempio di file .sublime-theme, che mostra il formato. Un tema completo avrà molte più regole per coprire tutti gli elementi utilizzati in l'interfaccia utente.
 
-				4.1.3.Variabili (Variables)
-						È possibile creare definizioni di colore riutilizzabili nella chiave. I nomi può essere qualsiasi stringa che utilizza i caratteri , , e . I valori possono essere qualsiasi formato di colore valido.variablesa-zA-Z0-9_-
+					Terminology
 
-						È possibile fare riferimento alle variabili nelle impostazioni e nelle regole globali, tramite il comando sintassi. Nell'esempio seguente viene illustrata la variabile di base uso:var(example_var_name)
-						@schema@variabili
-				4.1.4.Impostazioni globali (Global Settings)
-				4.1.5.Regole di ambito (Scope Rules)
-				4.1.6.Personalizzazione (Customization)
-				4.1.7.Appendice: Colori CSS (Appendix: CSS Colors)
->>>>>>> f9d3d7b071af3a52da8371a8d2a35ba1a0c45627
-		
-		4.2.Temi **
+					General Information
+
+					Inheritance
+
+					Variables
+
+					Colors
+
+					Font Sizes
+
+					Attributes
+
+					Settings
+
+					Properties
+
+					Elements
+
+					Deprecated
+
+					Obsolete
+
+					Customization
 		
 		4.3.Menu **
 		
@@ -499,3 +687,10 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 		4.8.Guida di riferimento minihtml **
 		
 		4.9.Guida al porting dei plugin **
+
+		RIASSUNTO
+				LE PERSONALIZZAZIONI	
+						si trovano nella cartella User ed i file sono:
+
+				personalizzazioni dei colori						: Monokai.sublime-color-scheme
+				pacchetto di controllo								: Package Control.sublime-settings
