@@ -9,15 +9,18 @@
 git add .
 git commit -m "aggiornamento"
 git push
-PAUSE
 
-PAUSE
+
+
 
 exit
+
+
 goto attivazione
 	
 
 copia questo comando nella shell dos
+--------------------------------------------------------
 					comando 1
 cmd.exe 
 					comando 2

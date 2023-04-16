@@ -1,6 +1,7 @@
 GUIDA_POWER_SHELL
 	Note
 		il tutorial per powershell si trova qui:
+				
 			1) powershell
 			https://marjolein-teepen.com/it/tutorial-powershell-per-principianti-imparare-powershell-scripting/
 
@@ -216,6 +217,7 @@ GUIDA_POWER_SHELL
 		Invoke-Item
 					Esegue l'azione predefinita sull'elemento specificato.
 							@Invoke_(esegue l'azione, apre il file o lo esegue)
+							@powershell@esegui@file_(esegui comando powershell)
 			Sintassi
 				Invoke-Item
 			      [-Path] <String[]>
