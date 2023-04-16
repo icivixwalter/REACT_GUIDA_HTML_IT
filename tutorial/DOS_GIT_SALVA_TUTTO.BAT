@@ -19,7 +19,7 @@ exit
 goto attivazione
 
 
-apri github per controllare  @apri@git
+apri github per controllare  @apri@git 
 --------------------------------------------------------
 git remote get-url origin 
 		= ottiene l'indirizzo web 
@@ -43,7 +43,8 @@ In dos puoi usare start ma viene riconosciuto anche in Powershell
 copia il comando in pawershell per eseguire il salvataggio
 su git in modo veloce.
 @git@salvataggio@veloce.in@powershell_(Utilizza il saltaggio veloche in Powershell)
-@salva@git@veloce
+@salva@git@veloce  @salva@veloce.con.git
+
 --------------------------------------------------------
 
 Start-Process -FilePath "C:\CASA\LINGUAGGI\HTML\PROGETTI_HTML\REACT_GUIDA_HTML_IT\react-guida-html\tutorial\DOS_GIT_SALVA_TUTTO.bat"
