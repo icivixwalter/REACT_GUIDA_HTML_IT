@@ -937,7 +937,8 @@ HELP_SUBLIMETEXT
 						
 
 		1) per aggiungere il nuovo FARE 3 comandi dos
-		git add .
+		git add .	
+							@git.add_(aggiungi all'indice)
 				Aggiungi il contenuto del file all'indice (vedi comando add .)
 					git_add
 						comando + opzioni
@@ -953,7 +954,10 @@ HELP_SUBLIMETEXT
 		
 							Questo comando può essere eseguito più volte prima di un commit. E 'solo Aggiunge il contenuto dei file specificati nel momento in cui il comando Aggiungi è Correre; Se si desidera includere le modifiche successive nel commit successivo, È necessario eseguire nuovamente per aggiungere il nuovo contenuto all'indice.
 						git add -f
+								@git.add@Opzione@-f_(git con -f  aggiunge anche i file ignorati di defalut -f = forzatura)
+								@git-f_{forza il salvataggio}
 							Il comando non aggiungerà i file ignorati per impostazione predefinita. Se ce ne sono I file ignorati sono stati specificati in modo esplicito nella riga di comando, avranno esito negativo con un elenco di file ignorati. File ignorati raggiunti da ricorsione della directory o globbing del nome del file eseguito da Git (cita il tuo globi prima del guscio) saranno silenziosamente ignorati. Il comando git add può essere utilizzato per aggiungere file ignorati con l'opzione (forza -f ).
+						
 						OPTIONS
 						
 										@opzioni@git-add
