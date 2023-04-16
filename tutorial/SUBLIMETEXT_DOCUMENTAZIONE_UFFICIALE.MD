@@ -98,11 +98,11 @@ https://www.sublimetext.com/docs/index.html#customization
 
 						Di seguito è riportato un esempio del formato di un file con schema di colori .sublime. Una combinazione di colori completa avrà molte più regole per coprire lo standard nomi di ambito.
 							 ES
-								 	{
+								 {
 								    "name": "Example Color Scheme",
 								    "globals":
 								    {
-								        "background": "rgb(34, 34, 34)",
+								        "background": "rgb(34, 34, 34- ",
 								        "foreground": "#EEEEEE",
 								        "caret": "white"
 								    },
@@ -116,7 +116,7 @@ https://www.sublimetext.com/docs/index.html#customization
 								        {
 								            "name": "String",
 								            "scope": "string",
-								            "foreground": "hsla(50, 100%, 50%, 1)",
+								            "foreground": "hsla(50, 100%, 50%, 1",
 								        },
 								        {
 								            "name": "Number",
@@ -131,23 +131,31 @@ https://www.sublimetext.com/docs/index.html#customization
 					I colori nelle combinazioni di colori possono essere specificati utilizzando uno dei sette formati:		@file@schema@colori @combinazione.di.colori @colori.7.formati
 											@file@schema@colori
 
-						1) formato Hex RGB
+						1 
+ formato Hex RGB
 							Hex RGB: A seguito da sei caratteri esadecimali, con i primi due specificando il canale rosso, secondo rimorchiare il canale verde e gli ultimi due canale blu. Il rosso è scritto come . Una forma abbreviata è Disponibile quando ciascuna delle tre coppie utilizza lo stesso valore per entrambe personaggi. Il rosso è scritto come .##FF0000#F00
 
 							Hex RGBA: uguale a Hex RGBA, ma con una coppia extra di caratteri esadecimali in Fine per specificare il canale alfa. Il rosso con il 67% di opacità è scritto come . La forma abbreviata sarebbe .#FF0000AA#F00A
 
-						2) Notazione funzionale RGB
+						2  
+ Notazione funzionale RGB
 							Notazione funzionale RGB: una funzione denominata che accetta tre numeri interi compresi tra 0 e 255. Il primo numero intero specifica il canale rosso, il secondo il canale verde e il terzo il canale blu. Il rosso è scritto come.rgbrgb(255, 0, 0)
 
-						3) Notazione funzionale RGBA
-							Notazione funzionale RGBA: identica al formato della funzione RGB, ad eccezione del nome della funzione è e viene aggiunto un quarto parametro accettando un da a specificare il canale alfa. Rosso con L'opacità del 50% è scritta come .rgba0.01.0rgba(255, 0, 0, 0.5)
+						3 
+ Notazione funzionale RGBA
+							Notazione funzionale RGBA: identica al formato della funzione RGB, ad eccezione del nome della funzione è e viene aggiunto un quarto parametro accettando un da a specificare il canale alfa. Rosso con L'opacità del 50% è scritta come .rgba0.01.0rgba(255, 0, 0, 0.5 -
 
-						4) Notazione funzionale HSL
+
+						4-
+ Notazione funzionale HSL
 							Notazione funzionale HSL: una funzione denominata che accetta tre valori. Il primo è un numero intero nell'intervallo per specificare la tonalità. Il secondo è una percentuale che specifica la saturazione. Il terzo è un percentuale specificando la leggerezza. Il rosso è scritto come .hsl0360hsl(0, 100%, 50%)
-						5) Notazione funzionale HSLA:
-							Notazione funzionale HSLA: identica al formato della funzione HSL, ad eccezione del parametro nome della funzione è e viene aggiunto un quarto parametro accettando un da a specificare il canale alfa. Rosso con L'opacità del 50% è scritta come .hsla0.01.0hsla(0, 100%, 50%, 0.5)
+						5 -
+ Notazione funzionale HSLA:
+							Notazione funzionale HSLA: identica al formato della funzione HSL, ad eccezione del parametro nome della funzione è e viene aggiunto un quarto parametro accettando un da a specificare il canale alfa. Rosso con L'opacità del 50% è scritta come .hsla0.01.0hsla(0, 100%, 50%, 0.5 -
+
 						6) Notazione funzionale HWB:
-							Notazione funzionale HWB: una funzione denominata che accetta tre o quattro valori. Il primo è un numero intero nell'intervallo per specificare la tonalità. La seconda è una percentuale che specifica la percentuale di bianco mescolato. Il terzo è una percentuale che specifica il nero mescolato. Il quarto parametro facoltativo è un valore da a quello Controlla l'opacità. Ecco alcuni esempi: e .hwb03600.01.0hwb(0, 20%, 20%)hwb(0, 20%, 20%, 0.5)
+							Notazione funzionale HWB: una funzione denominata che accetta tre o quattro valori. Il primo è un numero intero nell'intervallo per specificare la tonalità. La seconda è una percentuale che specifica la percentuale di bianco mescolato. Il terzo è una percentuale che specifica il nero mescolato. Il quarto parametro facoltativo è un valore da a quello Controlla l'opacità. Ecco alcuni esempi: e .hwb03600.01.0hwb(0, 20%, 20%)hwb(0, 20%, 20%, 0.5 -
+
 						7) Denominato
 							Denominato: nomi di colori CSS. Si prega di notare che mentre alcuni condividono nomi con colori denominati X11 utilizzati nei file .tmTheme, il I colori reali tendono a differire.
 
@@ -166,7 +174,8 @@ https://www.sublimetext.com/docs/index.html#customization
 								lightness() adjuster: modifica il canale di luminosità del colore di base, nello spazio colore HSL, al valore specificato, da a . Impostando la leggerezza al 90%: . Diminuendo la leggerezza del 10%: . È disponibile anche un nome abbreviato di l() per questo regolatore.0%`100%color(var (base_green) lightness(0.9))color (var(base_green) l(- 10%))
 
 								3179
-								regolatore min-contrast() (proprietario: modifica un colore per garantire un rapporto di contrasto minimo rispetto a un colore "di sfondo". Il primo parametro è il colore per calcolare nuovamente il contrasto, lo "sfondo" e il secondo è un numero decimale che specifica il rapporto di contrasto minimo. Valori tipici per l'intervallo di rapporti di contrasto da a . Garantire un Rapporto di contrasto di 2,5 sullo sfondo: 2.04.5color(var (base_green) min-contrast(var(bg_color) 2.5))
+								regolatore min-contrast() (proprietario: modifica un colore per garantire un rapporto di contrasto minimo rispetto a un colore "di sfondo". Il primo parametro è il colore per calcolare nuovamente il contrasto, lo "sfondo" e il secondo è un numero decimale che specifica il rapporto di contrasto minimo. Valori tipici per l'intervallo di rapporti di contrasto da a . Garantire un Rapporto di contrasto di 2,5 sullo sfondo: 2.04.5color(var (base_green) min-contrast(var(bg_color) 2.5 -
+)
 			4.1.3.Variabili (Variables)
 						È possibile creare definizioni di colore riutilizzabili nella chiave. I nomi può essere qualsiasi stringa che utilizza i caratteri , , e . I valori possono essere qualsiasi formato di colore valido.variablesa-zA-Z0-9_-  @creazione@variabili.per.la.definizione@di@colori
 
@@ -180,9 +189,9 @@ https://www.sublimetext.com/docs/index.html#customization
 									    "name": "Example Color Scheme",
 									    "variables":
 									    {
-									        "green": "hsla(153, 80%, 40%, 1)",
+									        "green": "hsla(153, 80%, 40%, 1",
 									        "black": "#111",
-									        "white": "rgb(242, 242, 242)"
+									        "white": "rgb(242, 242, 242 "
 									    },
 									    "globals":
 									    {

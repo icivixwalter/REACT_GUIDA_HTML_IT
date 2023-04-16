@@ -53,7 +53,8 @@ HELP_SUBLIMETEXT
 				  @colore@selezione @testo@selezionato
 
 				  vai al MENU
-				  	1)
+				  	1 
+
 				  	PREFERENCES---->  package Control
 				
 						scrivere per scaricare il
@@ -100,6 +101,7 @@ HELP_SUBLIMETEXT
 						v.d.---> @menu@edit_(vedi menu edit)
 
 			comando di apertura e chiusura dei livelli
+								@ctrl+k@ctrl+n_(comando chiusura livelli)
 				ELENCO-COMANDI_CTRL+K+N
 					CTRL+K+N
 						COMANDI DI APERTURA E CHIUSURA DEI LIVELLI --> CTRL+K E CTRL+N
@@ -324,14 +326,17 @@ HELP_SUBLIMETEXT
 				Categorie
 					Le impostazioni in Sublime Text sono organizzate in tre categorie. L'impostazione predefinita Il file delle impostazioni organizza le impostazioni in sezioni per facilitare la distinzione.
 
-					1) Impostazioni editor: queste impostazioni influiscono sul comportamento e sulla funzionalità presentato durante la modifica del testo in un file. Gli esempi includono , e . Queste impostazioni sono presentate nel primo del file delle impostazioni predefinite.font_facetab_sizespell_check
+					1 
+ Impostazioni editor: queste impostazioni influiscono sul comportamento e sulla funzionalità presentato durante la modifica del testo in un file. Gli esempi includono , e . Queste impostazioni sono presentate nel primo del file delle impostazioni predefinite.font_facetab_sizespell_check
 						@EDITOR@IMPOSTAZIONI
 
-					2) Impostazioni dell'interfaccia utente: GLOBALI -> queste impostazioni influiscono sull'utente generale , su tutte le finestre aperte. Gli esempi includono , e . Queste impostazioni sono presentato nella seconda sezione del file delle impostazioni predefinite.themeanimation_enabledoverlay_scroll_bars
+					2  
+ Impostazioni dell'interfaccia utente: GLOBALI -> queste impostazioni influiscono sull'utente generale , su tutte le finestre aperte. Gli esempi includono , e . Queste impostazioni sono presentato nella seconda sezione del file delle impostazioni predefinite.themeanimation_enabledoverlay_scroll_bars
 						@INTERFACCIA@IMPOSTAZIONI
 						@impostazioni@interfaccia@utente
 
-					3) Impostazioni del comportamento dell'applicazione: GLOBALI -> queste impostazioni influiscono sul comportamento del applicazione, su tutte le finestre aperte. Gli esempi includono , e . Queste impostazioni sono presentate nella Terza sezione del file delle impostazioni predefinite.hot_exitindex_filesignored_packages
+					3 
+ Impostazioni del comportamento dell'applicazione: GLOBALI -> queste impostazioni influiscono sul comportamento del applicazione, su tutte le finestre aperte. Gli esempi includono , e . Queste impostazioni sono presentate nella Terza sezione del file delle impostazioni predefinite.hot_exitindex_filesignored_packages
 						@APPLICAZIONE@IMPOSTAZIONI
 
 					ATTENZIONE
@@ -360,7 +365,8 @@ HELP_SUBLIMETEXT
 						
 
 
-					1) Impostazioni specifiche della sintassi
+					1 
+ Impostazioni specifiche della sintassi
 
 						Le impostazioni possono essere specificate in base alla sintassi. Gli usi comuni per questo sono hanno impostazioni di rientro diverse o la combinazione di colori varia in base al tipo di file.
 
@@ -373,7 +379,8 @@ HELP_SUBLIMETEXT
 							@COBALTO@KEY @CHIAVE@COBALTO
 
 
-					2) Impostazioni del progetto
+					2  
+ Impostazioni del progetto
 						Le impostazioni possono essere impostate in base al progetto, i dettagli sono nel progetto Documentazione.
 
 						Si noti che solo le impostazioni dell'editor possono essere specificate nelle impostazioni del progetto.
@@ -384,7 +391,8 @@ HELP_SUBLIMETEXT
 
 
 
-					3) Impostazioni senza distrazioni
+					3 
+ Impostazioni senza distrazioni
 
 						La modalità libera da distrazione ha un file di impostazioni aggiuntivo applicato (Distraction Free.sublime-settings). È possibile inserire il file le impostazioni qui per applicarle solo quando sono in modalità Distraction Free - accesso dalla voce di menu Impostazioni preferenze – Distraction Free.
 
@@ -455,7 +463,8 @@ HELP_SUBLIMETEXT
 			   Vintage viene avviato in modalità di inserimento per impostazione predefinita. Questo può essere modificato aggiungendo il Seguente impostazione per le impostazioni utente:
 					 "vintage_start_in_command_mode": true
 			Cosa è incluso
-			   Vintage include la maggior parte delle azioni di base: (elimina), (copia), (modifica), (minuscolo), (maiuscolo), (maiuscole e minuscole), (rot13), (senza rientro) e (rientro).dycgugUg~g?<>
+			   Vintage include la maggior parte delle azioni di base: (elimina), (copia), (modifica), (minuscolo), (maiuscolo), (maiuscole e minuscole), (rot13 
+				, (senza rientro) e (rientro).dycgugUg~g?<>
 
 			   Comprende anche molte mozioni, tra cui , , , , , , (spostarsi per sottoparole), (spostarsi all'indietro per sottoparole), , , , , ,lhjkWweEbBalt+walt+W$^%0GggfFtT^f^bHML
 			   
@@ -808,38 +817,42 @@ HELP_SUBLIMETEXT
 			});
 ### LE COSTANTI ESPRESSIONI JFX
 
-	1) ES = COSTANTE STRINGA
+	1 
+ ES = COSTANTE STRINGA
 		creo una costante stringa semplice
 		const name = 'Giuseppe Verdi';
 			
-	2) ES = CREO UN ELEMENTO CON H1 + STRINGA + RISULTATO FUNZIONE
+	2  
+ ES = CREO UN ELEMENTO CON H1 + STRINGA + RISULTATO FUNZIONE
 			creo un elemento con  h1 + stringa + il risultato di una funzione chiamata
 			const element = <h1>Hello, {name}</h1>;
 	
-	3) ES = CREA UNA ELEMENTO ELEMENTO H1 + STRINGA + RISULTATO DELLA FUNZIONE CHIAMATA
+	3 
+ ES = CREA UNA ELEMENTO ELEMENTO H1 + STRINGA + RISULTATO DELLA FUNZIONE CHIAMATA
 		Questa è sempre una  ESSRESSIONE JAVA SCRIPT DENTRO LE GRAFFE COMPOSTA DA 
 		un elemento html h1 		+
 		una stringa = hello 		+
 		da una stringa formatata con {formatName(user)
-			{formatName(user), RESTITUISCE il risultato della chiamata alla 
-			descritta in {} la  quale  combina due costanti e le restituisce.
-			
-			const element = (
+			{
+				formatName(user), RESTITUISCE il risultato della chiamata alla 	descritta in {} la  quale  combina due costanti e le restituisce.
+				
+				const element = (
 				<h1>
 					Hello, {formatName(user)}!
 				</h1>
 				);
 				
-		//qui creo sempre una costante e tra parenti {} inserisco espressioni javascript tipo firstName
-		const user = {
-		firstName: 'Giuseppe',
-		lastName: 'Verdi'
-		};
-		
-		ES: CREATA  LA FUNZIONE DA CHIAMARE
-		function formatName(user) {
-		return user.firstName + ' ' + user.lastName;
-		}
+				//qui creo sempre una costante e tra parenti {} inserisco espressioni javascript tipo firstName
+				const user = {
+				firstName: 'Giuseppe',
+				lastName: 'Verdi'
+				};
+				
+				ES: CREATA  LA FUNZIONE DA CHIAMARE
+				function formatName(user) {
+				return user.firstName + ' ' + user.lastName;
+				}
+
 ### SPECIFICARE ATTRIBUTI CON JFX
 	ATTRIBUTI CON VIRGOLETTE
 		 const element = <a href="https://www.reactjs.org"> link </a>;
@@ -873,14 +886,15 @@ HELP_SUBLIMETEXT
 			APPLICAZIONE ALL'INTERNO DI UN FILE .TXT
 				Note
 					Nell'elemnto button vengono effettuati 2 richiami:
-						<button className="btn" onClick={() => setCount((count) => count + 1)}>
+						<button className="btn" onClick={() => setCount((count) => count + 1 }>
 				count is {count}
 			</button>
 
 						className="btn"
 					e questo richiama la classe .css costruita per i button.
 
-					onClick={() => setCount((count) => count + 1)
+					onClick={() => setCount((count) => count + 1 
+
 						questo è l'evento button e la funzione richiamata
 
 
@@ -927,6 +941,9 @@ HELP_SUBLIMETEXT
 
 					i libro di tutorial si trova qui:
 				C:\\CASA\\LINGUAGGI\\GIT_DEKTOPO\\TUTORIAL\tutorial_(progit).pdf
+					@apri@tutorial@git_(con dos apri il git.pdf)
+					@apri@tutorial@pdf.git_(apri git .pdf)
+
 					puoi attivarlo copiando questo comando DOS  su terminale:
 
 					Poswer shel apertura di un file:
@@ -936,7 +953,8 @@ HELP_SUBLIMETEXT
 					Start "apri tutorial" C:\CASA\LINGUAGGI\GIT_DESKTOP\TUTORIAL\tutorial_(progit).pdf
 						
 
-		1) per aggiungere il nuovo FARE 3 comandi dos
+		1 
+ per aggiungere il nuovo FARE 3 comandi dos
 		git add .	
 							@git.add_(aggiungi all'indice)
 				Aggiungi il contenuto del file all'indice (vedi comando add .)
@@ -1101,12 +1119,13 @@ HELP_SUBLIMETEXT
 
 ### GIT_CREARE_UN_PROGETTO_NUOVO
 	come creare un nuova repositori con git con riga di comando:
-		1) cd directory in cui creare
+		1 
+ cd directory in cui creare
 			attenzione se la directori gia esiste impostare il cd.. fuori di una posizione
-		2) git init REACT_CONCETTI_CHIAVE
-		3) git add .
-		4) git commit -m "messaggio del commit	
-		5) git push <remote_name> <branch_name>
+		2 - git init REACT_CONCETTI_CHIAVE
+		3 - git add .
+		4 -  git commit -m "messaggio del commit	
+		5 - git push <remote_name> <branch_name>
 			   Es. react        origin
 			   
 			   su https://github.com/icivixwalter
@@ -1138,7 +1157,7 @@ HELP_SUBLIMETEXT
 															<button onClick={this.handleClick}>
 															{this.state.acceso ? 'Acceso' : 'Spento'}
 															</button>
-														);
+																	);
 														}
 														}
 

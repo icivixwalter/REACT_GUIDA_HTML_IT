@@ -1,6 +1,6 @@
 GUIDA_YAML
 	Altri tutorial di YAML
-			1)  Tutorial YAML - Una guida completa a YAML usando Python
+			1  Tutorial YAML - Una guida completa a YAML usando Python
 					https://ita.myservername.com/yaml-tutorial-comprehensive-guide-yaml-using-python
 
 						Puoi clonare il progetto usando il comando sottostante.
@@ -14,7 +14,7 @@ GUIDA_YAML
 							Per esempio, possiamo scrivere una funzione per prendere i dati di input da un file esterno e stamparne il contenuto riga per riga invece di scrivere il codice e i dati insieme in un unico file.
 					Vantaggi dell'utilizzo di un file YAML
 							....
-			2)  YAML Il formato più usato per i file di configurazione come alternativa ad XML
+			2  YAML Il formato più usato per i file di configurazione come alternativa ad XML
 					https://www.html.it/pag/17457/yaml/
 
 				YAML risulta particolarmente utile per la serializzazione dei dati, per le operazioni di lettura e scrittura su file YAML vanno utilizzati rispettivamente i metodi load e dump.

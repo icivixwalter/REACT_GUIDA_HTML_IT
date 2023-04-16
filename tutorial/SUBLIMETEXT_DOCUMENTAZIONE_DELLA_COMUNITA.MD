@@ -57,9 +57,12 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA (Sublime Text Community Documentation)
 				  Versioni precedenti
 						Nel caso in cui desideri eseguire il downgrade del tuo Sublime Text, È possibile accedere ai file binari per qualsiasi versione rilasciata in precedenza sostituendo il numero di build nell'URL di download. Ad esempio, per recuperare la versione di Windows per Sublime Text 3.0, prendi l'ultimo URL di download fornito e sostituiscilo con quello della versione Sublime Text 3.0.
 	  
-						3.2.2 (Build 3211): https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe(apre una nuova finestra)
-						3.0 (Build 3143): https://download.sublimetext.com/Sublime%20Text%20Build%203143%20x64%20Setup.exe
-		 2.3.CONCETTI BASE
+						3.2.2 Build 3211 
+						: https://download.sublimetext.com/Sublime%20Text%20Build%203211%20x64%20Setup.exe(apre una nuova finestra
+
+		3.0 (Build 3143 
+						: https://download.sublimetext.com/Sublime%20Text%20Build%203143%20x64%20Setup.exe
+		2.3.CONCETTI BASE
 			Per comprendere appieno il resto di questa guida, Devi avere familiarità con i concetti presentati in questa pagina.
 
 			2.3.1.Convenzioni generali
@@ -782,13 +785,12 @@ SUBLIME_TEX_DOCUMENTAZIONE_DELLA_COMUNITA (Sublime Text Community Documentation)
 					        		C:\Users\walter.rossi\AppData\Roaming\Sublime Text\Packages\User
 					        		Monokai.sublime-color-scheme
 
-					        		1) Aprire il file Monokai.sublime-color-scheme nella directory User
-					        		2) impostare i colori es. "name": "Comment" = SONO I COMMENTI   */
+					        		1  Aprire il file Monokai.sublime-color-scheme nella directory User
+					        		2  impostare i colori es. "name": "Comment" = SONO I COMMENTI   */
 
 					        		Per aprire il file occorre attivare il menu
 					        			Preference -----> Browse Package 
 					        				selezionare il file nella path ed aprilo
-
 
    5.0.ESTENDIBILITA ED AUTOMAZIONE
 	  5.1.1.Estensione di testo sublime

@@ -19,18 +19,20 @@ exit
 goto attivazione
 
 
-apri github per controllare
+apri github per controllare  @apri@git
 --------------------------------------------------------
 git remote get-url origin 
 		= ottiene l'indirizzo web 
 
 per aprire il browser con pawershell utilizzare il comando :
+@git@add.powershell_(salvataggio veloce in pawershell)
 @apri@github.in@powershell_(cmd per aprire il browser in github con powershell_)
 				============================================
 	Start-Process "https://github.com/icivixwalter/REACT_GUIDA_HTML_IT"
 
 In dos puoi usare start ma viene riconosciuto anche in Powershell
 @apri@github.in@dos_(cmd per aprire il browser in github con DOS)
+
 				============================================
 
 	start https://github.com/icivixwalter/REACT_GUIDA_HTML_IT

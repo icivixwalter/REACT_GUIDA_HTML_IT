@@ -3,8 +3,8 @@
 @REM SETLOCAL ENABLEEXTENSIONS
 @REM SETLOCAL ENABLEDELAYEDEXPANSION
 
-:1° IMPOSTO LE VARIABILI
-:---------------------------------------}set le variabili e carica path
+@REM:1Â° IMPOSTO LE VARIABILI
+@REM :---------------------------------------}set le variabili e carica path
 SET PATH_s=c:\CASA\LINGUAGGI\SUBLIMETEXT\TutorialSublimeText\
 SET FILE_s=IL_MIO_TUTORIAL_SUBLIMETEXT.MD
 

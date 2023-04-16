@@ -1,15 +1,16 @@
 GUIDA_POWER_SHELL
+GUIDA_POWER_SHELL
 	Note
 		il tutorial per powershell si trova qui:
 				
-			1) powershell
+			1 powershell
 			https://marjolein-teepen.com/it/tutorial-powershell-per-principianti-imparare-powershell-scripting/
 
-			2) help  Guida di Windows PowerShell(current)
+			2 help  Guida di Windows PowerShell(current)
 
 			https://forsenergy.com/it-it/windowspowershellhelp/html/
 
-			3) guida Microsofr
+			3 guida Microsofr
 			https://learn.microsoft.com/it-it/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.3&viewFallbackFrom=powershell-6
 
 			ATTIVA POWERSHELL CON IL DOS

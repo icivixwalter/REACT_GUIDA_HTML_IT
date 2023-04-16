@@ -189,12 +189,13 @@
 
 ### GIT
 	come creare un nuova repositori con git con riga di comando:
-		1) cd directory in cui creare
+		1 
+ cd directory in cui creare
 			attenzione se la directori gia esiste impostare il cd.. fuori di una posizione
-		2) git init GUIDA_REACT_HTML
-		3) git add .
-		4) git commit -m "messaggio del commit	
-		5) git push <remote_name> <branch_name>
+		2 - git init GUIDA_REACT_HTML
+		3 - git add .
+		4 - git commit -m "messaggio del commit	
+		5 - git push <remote_name> <branch_name>
 			   Es. react        origin
 			   es
 			   git remote add react-guida-html https://github.com/icivixwalter
