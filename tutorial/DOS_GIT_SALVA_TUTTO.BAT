@@ -15,10 +15,13 @@ PAUSE
 
 exit
 goto attivazione
-	copia questo comando nella shell
+	
 
-	cmd.exe 
-	call DOS_GIT_SALVA_TUTTO.BAT
+copia questo comando nella shell dos
+					comando 1
+cmd.exe 
+					comando 2
+call DOS_GIT_SALVA_TUTTO.BAT
 
 
 :attivazione
