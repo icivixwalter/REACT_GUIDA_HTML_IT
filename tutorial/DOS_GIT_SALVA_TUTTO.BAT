@@ -41,6 +41,7 @@ In dos puoi usare start ma viene riconosciuto anche in Powershell
 copia il comando in pawershell per eseguire il salvataggio
 su git in modo veloce.
 @git@salvataggio@veloce.in@powershell_(Utilizza il saltaggio veloche in Powershell)
+@salva@git@veloce
 --------------------------------------------------------
 
 Start-Process -FilePath "C:\CASA\LINGUAGGI\HTML\PROGETTI_HTML\REACT_GUIDA_HTML_IT\react-guida-html\tutorial\DOS_GIT_SALVA_TUTTO.bat"

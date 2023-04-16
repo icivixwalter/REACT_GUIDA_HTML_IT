@@ -218,6 +218,7 @@ GUIDA_POWER_SHELL
 					Esegue l'azione predefinita sull'elemento specificato.
 							@Invoke_(esegue l'azione, apre il file o lo esegue)
 							@powershell@esegui@file_(esegui comando powershell)
+							@apri@file@invoke_(powershell esempo pri file)
 			Sintassi
 				Invoke-Item
 			      [-Path] <String[]>
@@ -240,7 +241,13 @@ GUIDA_POWER_SHELL
 			      [-Confirm]
 			      [<CommonParameters>]
 	      Descrizione
+	      			@Invoke-Item_(esegue il file )
 	      	Il Invoke-Item cmdlet esegue l'azione predefinita nell'elemento specificato. Ad esempio, 
 	      			esegue un file eseguibile o 
 	      			apre un file di documento nell'applicazione associata al tipo di file di documento. 
    			L'azione predefinita dipende dal TIPO DI ELEMENTO e viene determinato dal provider di PowerShell che fornisce l'accesso ai dati.
+
+	S
+		Start-Process
+				Esempio di apertura file
+						Start-Process -FilePath "C:\Users\NomeUtente\Desktop\file.docx"
