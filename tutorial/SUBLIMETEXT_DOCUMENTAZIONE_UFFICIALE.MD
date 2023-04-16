@@ -1,6 +1,7 @@
 
 
-DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.com/docs/index.html#customization
+DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) 
+https://www.sublimetext.com/docs/index.html#customization
 	Note
 			Le pagine seguenti contengono la documentazione ufficiale di Sublime Text. Il Sublime Testo Documentazione Non Ufficiale è un Ottima risorsa supplementare, con un'enorme quantità di informazioni non coperte nella documentazione ufficiale. ( SI TROVA IN QUESTO
 			PARAGRAFO -----> @link@sublimetext@DOCUMENTAZIONE.NON.UFFICIALE )
@@ -688,7 +689,147 @@ DOCUMENTAZIONE_SUBLIME_TEX (DOCUMENTAZIONE UFFICIALE) https://www.sublimetext.co
 		
 		4.5.Guida di riferimento alle API **
 		
-		4.6.Definizioni della sintassi **
+		4.6.Syntax Definitions - Definizioni della sintassi # todo: parziale da finire #
+				NOTE
+					si trova qui:
+					https://www.sublimetext.com/docs/syntax.html
+					codice ----> @Syntax@Sintassi_(definizione della sintassi)
+					 				 @Sintassi_(puo utilizzare file @.sublime-syntax 
+					 				 	che @.tmLanguage)
+				 				 	 @YAML@file_(MODELLO bASE)
+
+
+				Versione:
+					dev 4.0 3.2 3.1 3.0
+					Sublime Text può utilizzare sia file 
+						.sublime-syntax 
+						che 
+						.tmLanguage 
+					per l'evidenziazione della sintassi. 
+					Questo documento descrive i file con sintassi sublime
+				Overview - Panoramica
+					Sublime file di sintassi sono file YAML con una piccola intestazione, seguito da un elenco di contesti. Ogni contesto ha un elenco di modelli che Descrivere come evidenziare il testo in tale contesto e come modificare l'attuale Testo.
+
+					Ecco un piccolo esempio di un file di sintassi progettato per evidenziare C.
+						@YAML@file.di.sintassi_(modello di esempio)
+							%YAML 1.2
+									---
+
+									//questa è l'intestazione del menu a C
+									name: C
+									file_extensions: [c, h]			// sono le estensioni dei file dei menu a discesa
+									scope: source.c
+									
+									/*questo è il contesto a main 
+										contesto principale dove verra utilizzato
+									//--------------------------------------------------//
+									//note con 
+											/b = limiti delle parole corrispondenti non cosiderate
+												  come chiavi es. \b(if|else|for|while)\b
+									*/
+									contexts:
+								  	main:
+								    	+ match: \b(if|else|for|while)\b
+								      	scope: keyword.control.c   //assegna l'ambito al file
+
+
+
+
+
+
+					Al suo interno, una definizione di sintassi assegna ambiti (ad esempio, e.g., keyword.control.c ) a aree del testo. Questi ambiti vengono utilizzati dalle combinazioni di colori per evidenziare il Testo.
+							@ambiti@aree.testo@utilizzo@combinazione@colori
+							@ambiti@evidenziare.testo
+
+					Questo file di sintassi contiene un contesto, main , che corrisponde alle parole [if, else, for, while] , e assegna loro l'ambito keyword.control.c. 
+
+					Il nome del contesto speciale: ogni sintassi deve definire un contesto principale, come Verrà utilizzato all'inizio del file.
+
+					The match key is a regex, supporting features from the Oniguruma regex engine. In the above example, \b is used to ensure only word boundaries are matched, to ensure that words such as elsewhere are not considered keywords.
+
+					La chiave è una regex, che supporta le funzionalità della regex del motore Oniguruma . In l'esempio precedente
+						\b
+					viene utilizzato per garantire che solo i limiti delle parole corrispondano, per garantire che parole come tali non siano considerate parole chiave.
+							@regex@chiave@YAML_(LA CHIAVE)
+
+					Si noti che a causa della sintassi YAML, i caratteri di tabulazione non sono consentiti all'interno di file 
+						.sublime-syntax.
+							@YAML@tabulazioni_(Non sono ammessi tabulazioni)
+
+
+				Header
+						Le chiavi consentite nell'area dell'intestazione sono:
+									@YAML@header_(header intestazioni le chiavi)
+
+							name
+								Definisce il nome visualizzato per la sintassi nel menu. È facoltativo e verrà derivato dal nome del file se non utilizzato.
+									@YAML@header@name_(intestazione nome sintassi menu facoltativo)
+									@YAML@name_(se non definito è il file utilizzato)
+							file_extensions
+
+												@YAML@file_extensions_(definizione delle estensioni dei file)
+									Un elenco di stringhe, definendo le estensioni di file questa sintassi deve essere utilizzata per la lista
+										.Extensions
+									Le estensioni elencate qui verranno mostrate nei menu a discesa della finestra di dialogo dei file su alcuni sistemi operativi.
+
+									Se un file non ha un nome di base, e.g. 
+											.gitignore 
+									il parametro È necessario specificare l'intero nome del file, inclusa l'interlinea.
+							hidden_file_extensions
+									@4075
+										Un elenco di stringhe, definendo anche le estensioni di file questa sintassi dovrebbe essere utilizzata per. Queste estensioni non sono elencate nelle finestre di dialogo dei file.
+												@YAML@hidde_file_extensions_(estensione nascoste o non elencate)
+							first_line_match
+									Quando un file viene aperto senza un'estensione riconosciuta, la prima riga del parametro Il contenuto del file verrà testato rispetto a questa regex, per vedere se la sintassi dovrebbe essere applicato
+											@YAML@first_line_match_(primo file aperto senza estensione prima riga del parametro)
+							scope
+									Ambito predefinito assegnato a tutto il testo del file
+
+										@YAML@scope_(ambito predefinito del file)
+							version
+									Un numero intero, 1 o 2 , che controlla la compatibilità con le versioni precedenti. Le nuove sintassi dovrebbero essere destinate a 2, in quanto corregge alcuni incoerenze nella modalità di applicazione degli ambiti.
+									
+										@YAML@version_(interi per le versioni)
+							extends
+									
+									Una stringa di una sintassi di base da cui questa sintassi deve ereditare. Sintassi di base deve essere specificato utilizzando il suo percorso del pacchetto, ad esempio 
+										Packages/JavaScript/JavaScript.sublime-syntax. 
+									Per una panoramica dell'ereditarietà della sintassi, vedere Ereditarietà.
+
+
+										@YAML@extends_(eredarieta della sintassi)
+							hidden
+
+									Le definizioni di sintassi nascoste non verranno visualizzate nel menu, ma possono comunque essere assegnati da plugin o inclusi da altre definizioni di sintassi.
+
+										@YAML@hidden_(sintassi nascoste non visualizzate nel menu)
+
+
+				
+				Contexts *** todo: da finire vedere https://www.sublimetext.com/docs/syntax.html#overview
+					Meta Patterns
+				
+					Match Patterns
+				
+					Include Patterns
+				
+					Prototype Context
+				
+				Including Other Files
+				
+				Variables
+				
+				Inheritance
+				
+				4075
+				Selected Examples
+				
+				Testing
+				
+				Compatibility
+				
+				4075
+				Overview
 		
 		4.7.Denominazione dell'ambito **
 		

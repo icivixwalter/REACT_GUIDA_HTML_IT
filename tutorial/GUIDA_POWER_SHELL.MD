@@ -4,11 +4,122 @@ GUIDA_POWER_SHELL
 			1) powershell
 			https://marjolein-teepen.com/it/tutorial-powershell-per-principianti-imparare-powershell-scripting/
 
-			2) help
-			https://forsenergy.com/it-it/windowspowershellhelp/html/979654ae-7994-47f8-be43-d79e7a140143.htm
+			2) help  Guida di Windows PowerShell(current)
+
+			https://forsenergy.com/it-it/windowspowershellhelp/html/
 
 			3) guida Microsofr
 			https://learn.microsoft.com/it-it/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.3&viewFallbackFrom=powershell-6
+
+			ATTIVA POWERSHELL CON IL DOS
+				se sei sul dos PASSA a pawershel con questo comando da terminale
+
+				POWERSHELL
+						@terminale@attiva@POWERSHELL
+						@come.si.attiva@POWERSHELL
+						@attiva@POWERSHELL
+	POWER_SHELL_MICROSOFT
+		Capitolo 1 - Introduzione a PowerShell
+							https://learn.microsoft.com/it-it/powershell/scripting/learn/ps101/01-getting-started?view=powershell-7.3
+
+			Prerequisiti per iniziare a usare Powershell
+					Ho notato che, nella maggior parte dei casi, i relatori di meeting e conferenze hanno già PowerShell installato quando avviano presentazioni introduttive. Questo libro inizia rispondendo alle domande che ho sentito chiedere dai partecipanti che non avevano alcuna esperienza con PowerShell.
+
+					In particolare, questo capitolo illustra come trovare e avviare PowerShell e su come risolvere alcune delle difficoltà iniziali che i nuovi utenti riscontrano con PowerShell. Assicurarsi di seguire in modo scrupoloso gli esempi presentati in questo capitolo sul computer Windows 10 dell'ambiente lab.
+
+			Dove è possibile trovare PowerShell?
+   GUIDA_WINDOWS_POWERSHELL
+   					codice----> @GUIDA@PowerShell_(Guida per PowerShell)
+   					@in@lavorazione_(LA GUIDA PER POWER SHELL)
+   							https://forsenergy.com/it-it/windowspowershellhelp/html/defed09e-2acd-4042-bd22-ce4bf92c2f24.htm
+   	1.Guida introduttiva a Windows PowerShell
+   	2.Manuale dell'utente di Windows PowerShell
+   					codice----> @Manuale@Utente@PowerShell@Mu_(Manuale utente)
+   					codice----> @MuPs_(Manuale per Windows)
+   		2.1.Nozioni di base su Windows PowerShell
+   		2.2.Informazioni su Windows PowerShell
+   		2.3.Concetti fondamentali di Windows PowerShell
+         2.4.Utilizzo di Windows PowerShell per l'amministrazione
+   					codice----> @UtlWnd_(Utilizzo per Windows)
+   					codice----> @Utilizzo.di@Windows@@UtlWnd_(PowerShel per l'amministrazione)
+				2.4.1.Gestione dei processi con cmdlet di tipo Process
+   					codice----> @Processi@Gestione@UtlWnd_(Gestione processi)
+				2.4.2.Gestione dei servizi
+   					codice----> @Servizi@Gestione@UtlWnd_(Gestione dei servizi)
+
+					Note
+						Sono disponibili otto cmdlet principali di tipo Service, progettati per una vasta gamma di attività di servizio. In questo manuale verrà illustrato solo come visualizzare l'elenco dei servizi e come modificarne lo stato di esecuzione. 
+						Per visualizzare un elenco completo dei cmdlet di tipo Service, utilizzare 
+								Get-Help *-Service; 
+									codice----> @UtlWnd@elenco@servizi_(cmdlet service per elencare i servizi)
+						per visualizzare informazioni su ciascun cmdlet di questo tipo, digitare 
+								Get-Help <nome-cmdlet>, 
+								ad esempio Get-Help New-Service.
+													@Get-Help
+
+
+
+   	3.Argomenti della Guida "About" di Windows PowerShell
+			3.1.PowerShell
+					Nota
+						Ottiene i processi in esecuzione nel computer locale o in un computer remoto.
+
+					Get-Process
+						@Processi@Es.3_(tutti i processi > 20 mega)
+									get-process | where-object {$_.WorkingSet -gt 20000000}
+						Sintassi
+								Get-Process [[-Name] <string[]>] [-ComputerName <string[]>] [-FileVersionInfo] [-Module] [<CommonParameters>]
+								
+								Get-Process -Id <Int32[]> [-ComputerName <string[]>] [-FileVersionInfo] [-Module] [<CommonParameters>]
+								
+								Get-Process -InputObject <Process[]> [-ComputerName <string[]>] [-FileVersionInfo] [-Module] [<CommonParameters>]
+						Descrizione
+							Con il cmdlet Get-Process vengono ottenuti i processi in un computer locale o remoto.
+
+							Senza parametri, Get-Process ottiene tutti i processi nel computer locale. È inoltre possibile specificare un determinato processo per nome o ID processo (PID) oppure passare un oggetto processo attraverso la pipeline a Get-Process.	
+											@Get-Process_(restituisce i processi per  nome o per id)
+
+							Per impostazione predefinita, Get-Process restituisce un oggetto processo che presenta informazioni dettagliate sul processo e supporta metodi che consentono l'avvio e l'arresto del processo. È anche possibile utilizzare i parametri di Get-Process per ottenere informazioni sulla versione del file per il programma in esecuzione nel processo e per ottenere i moduli caricati dal processo.
+
+						Parametri **
+								..... todo: da finire
+										https://forsenergy.com/it-it/windowspowershellhelp/html/27a05dbd-4b69-48a3-8d55-b295f6225f15.htm
+						Input e output **
+
+						Note **
+						Esempio 1*
+						Esempio 2*
+						Esempio 3*
+						Esempio 4*
+						Esempio 5*
+						Esempio 6*
+						Esempio 7*
+						Esempio 8*
+						Esempio 9
+								Con questi comandi viene illustrato come utilizzare la variabile automatica $pid 
+								per identificare il processo che ospita la sessione corrente di Windows PowerShell. 
+								
+								È possibile utilizzare questo metodo per distinguere il processo host dagli altri processi 
+								di PowerShell che può essere opportuno arrestare o chiudere.
+								
+								Con il primo comando vengono ottenuti tutti i processi PowerShell nella sessione corrente. 
+											get-process powershell
+												@get-process_(TUTTI I PROCESSI)
+								
+								Con il secondo comando viene ottenuto il processo PowerShell che ospita la sessione corrente.
+								(attenzione il processo viene salvata nella variabile $pid che salva il Pid)
+											get-process -id $pid
+												@get-process_(individua solo i processo host che ospita gli altri )
+
+				Stop-Process
+							@stop@processi_( puoi blocare i processi trovando il pid da studiare *** E FINIRE ***)
+							@todo_(DA FINIRE STOP AI PROCESSI TROVANDO IL PID...)
+										si trova qui:
+											https://forsenergy.com/it-it/windowspowershellhelp/html/
+
+      4.Argomenti della Guida relativi ai provider di Windows PowerShell
+      5.Guida di Windows PowerShell Integrated Scripting Environment (ISE)
+      6.Guida della console PowerShell.exe
 
 	A
 		Apri file
@@ -99,3 +210,35 @@ GUIDA_POWER_SHELL
 					Esempio 7: Ordinare i servizi in base al valore della proprietà
 						TODO: da finire
 							https://learn.microsoft.com/it-it/powershell/module/microsoft.powershell.management/get-service?view=powershell-7.3&viewFallbackFrom=powershell-6
+
+
+	I
+		Invoke-Item
+					Esegue l'azione predefinita sull'elemento specificato.
+							@Invoke_(esegue l'azione, apre il file o lo esegue)
+			Sintassi
+				Invoke-Item
+			      [-Path] <String[]>
+			      [-Filter <String>]
+			      [-Include <String[]>]
+			      [-Exclude <String[]>]
+			      [-Credential <PSCredential>]
+			      [-WhatIf]
+			      [-Confirm]
+			      [<CommonParameters>]
+
+
+		      Invoke-Item
+			      -LiteralPath <String[]>
+			      [-Filter <String>]
+			      [-Include <String[]>]
+			      [-Exclude <String[]>]
+			      [-Credential <PSCredential>]
+			      [-WhatIf]
+			      [-Confirm]
+			      [<CommonParameters>]
+	      Descrizione
+	      	Il Invoke-Item cmdlet esegue l'azione predefinita nell'elemento specificato. Ad esempio, 
+	      			esegue un file eseguibile o 
+	      			apre un file di documento nell'applicazione associata al tipo di file di documento. 
+   			L'azione predefinita dipende dal TIPO DI ELEMENTO e viene determinato dal provider di PowerShell che fornisce l'accesso ai dati.
