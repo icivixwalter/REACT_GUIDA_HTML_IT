@@ -1227,8 +1227,8 @@ HELP_SUBLIMETEXT
 				@mie@faq
 			Apri il terminale				
 					la chiave è "keys": ["ctrl+alt+t"]
-												@apri@terminale_(mie faq per aprire il terminale usa ctrl+alt+t )
-												@come@apri@terminale_(mie faq per aprire il terminale usa ctrl+alt+t )
+												@apri@terminale_(MIE FAQ:  per aprire il terminale usa ctrl+alt+t )
+												@come@apri@terminale_(MIE FAQ:  per aprire il terminale usa ctrl+alt+t )
 			  									@apri.il@terminale
 
 		C
