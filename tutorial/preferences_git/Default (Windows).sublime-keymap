@@ -1,0 +1,21 @@
+
+
+/*      FILE:                       Deault(Windows).sublime-settings
+        PATH:                       C:\Users\walter.rossi\AppData\Roaming\Sublime Text\Packages\User
+        cosa fa:                    Apre il termina bash 
+
+*/
+
+
+
+
+[//..
+	{
+    //apertura @terminale@dos  @key@Binding @short@command
+  "keys": ["ctrl+alt+t"],
+  "command": "open_terminal",
+  "args": {
+    "parameters": ["-T", "Working in directory %ComSpec%"]
+  },  //ricordati di mettere la virgola, @ricordati@virgola
+}
+]

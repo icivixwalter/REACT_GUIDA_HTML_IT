@@ -9,7 +9,7 @@ dir *.bat
 
 @rem salvo tutto con git
 git add .
-git commit -m "aggiornamento"
+git commit -m "aggiornamento git preferences di frosinone"
 git push
 
 exit
