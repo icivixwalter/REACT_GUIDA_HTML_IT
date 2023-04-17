@@ -41,23 +41,34 @@ per aprire github usa git remote:
 
 ---------------------------------------------------------------------------------
 
+// CLONA IL PROGETTO DALLA REPOSITORY GIT  IN Powershell O IN DOS
+//---------------------------------------------------------------------------------//
+
+	
+	@clona.in@dos@clona.in@powershell
+
+	git clone "https://github.com/icivixwalter/REACT_GUIDA_HTML_IT"
+
+//---------------------------------------------------------------------------------//
 
 
 
 // VISUALIZZA IN Powershell GITHUB + VISUALIZZA IN DOS
 //---------------------------------------------------------------------------------//
 per aprire il browser con pawershell utilizzare il comando :
-@git@add.powershell_(salvataggio veloce in pawershell)
+
 @apri@github.in@powershell_(cmd per aprire il browser in github con powershell_)
+@visualizza@repository@apri@github.in@dos_(cmd per aprire il browser in github con DOS)
 
-
+			    		 comando powershell_
 				============================================
+
 	Start-Process "https://github.com/icivixwalter/REACT_GUIDA_HTML_IT"
 
-In dos puoi usare start ma viene riconosciuto anche in Powershell
-@apri@github.in@dos_(cmd per aprire il browser in github con DOS)
-
+						
+						comando in dos
 				============================================
+In dos puoi usare start ma viene riconosciuto anche in Powershell
 
 	start https://github.com/icivixwalter/REACT_GUIDA_HTML_IT
 	
@@ -72,6 +83,7 @@ In dos puoi usare start ma viene riconosciuto anche in Powershell
 //---------------------------------------------------------------------------------//
 copia il comando in pawershell per eseguire il salvataggio
 su git in modo veloce.
+@git@add.powershell_(salvataggio veloce in pawershell)
 @git@salvataggio@veloce.in@powershell_(Utilizza il saltaggio veloci in Powershell)
 @git@salvataggi@veloci.in@powershell_(In Powershell Utilizza il saltaggio veloci )
 @salva@git@veloce  @salva@veloce.con.git
