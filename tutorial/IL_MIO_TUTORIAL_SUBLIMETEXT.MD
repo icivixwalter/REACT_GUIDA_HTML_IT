@@ -731,6 +731,13 @@ HELP_SUBLIMETEXT
 
 	  				@raggruppamento@livelli.di.testo_(faq: LIVELLI DI TESTO come viene attivato il ragruppamento, le chiavi. )
 	  				@menu@Edit--->Code Folding_(raggruppamento)
+
+					@visual@studio@code@raggruppamento_(si trova in File ---> Preferences ---->
+														Settings, mettere WorkBanch in verticale
+														"workbench.editor.splitInGroupLayout": "vertical" +
+														"workbench.editor.limit.value": 10 )
+
+					@visual@studio@code@raggruppamento_( puoi vedere le impostazioni con CTRL+SHIFT +p e keyboard)
 	  
 		M
 			MENU SUBLIME TEX
