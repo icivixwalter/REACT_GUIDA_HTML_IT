@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"git",
+				"github"
+			],
+			[
 				"re",
 				"red"
 			],
@@ -56,38 +60,15 @@
 	"buffers":
 	[
 		{
-			"contents": "DOS_GIT_SALVA_TUTTO.BAT\n@rem COMANDO DOS DI SALVATAGGIO\n@REM per attivarlo copia quest comando\n@REM \n\n@rem salvo tutto con git\ncmd.exe\ngit add .\ngit commit -m \"aggiornamento\"\ngit push\n\n\nexit\ngoto attivazione\n\tcopia questo comando nella shell\n\n\t//cmd\n\t//call DOS_GIT_SALVA_TUTTO.BAT\n\n\n:attivazione\n",
-			"file": "tutorial/DOS_GIT_SALVA_TUTTO.BAT",
-			"file_size": 314,
-			"file_write_time": 133261370689769820,
+			"file": "tutorial/GUIDA_POWER_SHELL.MD",
 			"settings":
 			{
-				"buffer_size": 297,
+				"buffer_size": 12114,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
 			"undo_stack":
 			[
-				[
-					3,
-					1,
-					"insert",
-					{
-						"characters": "//"
-					},
-					"AgAAAPQAAAAAAAAA9QAAAAAAAAAAAAAA9QAAAAAAAAD2AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA9AAAAAAAAAD0AAAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert",
-					{
-						"characters": "//"
-					},
-					"AgAAAPsAAAAAAAAA/AAAAAAAAAAAAAAA/AAAAAAAAAD9AAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAA+wAAAAAAAAD7AAAAAAAAAAAAAAAAAPC/"
-				]
 			]
 		}
 	],
@@ -103,20 +84,24 @@
 		"selected_items":
 		[
 			[
+				"menu",
+				"View: Toggle Menu"
+			],
+			[
+				"scheme",
+				"UI: Select Theme"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
 				"them",
 				"Monokai Pro: select theme"
 			],
 			[
-				"Package Control: ",
-				"Package Control: Install Package"
-			],
-			[
 				"SELECT THEM",
 				"Terminus Utilities: Select Theme"
-			],
-			[
-				"menu",
-				"View: Toggle Menu"
 			],
 			[
 				"menu ",
@@ -203,9 +188,11 @@
 	},
 	"console":
 	{
-		"height": 231.0,
+		"height": 302.0,
 		"history":
 		[
+			"menu",
+			"git",
 			"main",
 			"menu"
 		]
@@ -226,14 +213,22 @@
 	],
 	"file_history":
 	[
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/deno.json",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/DOS_GIT_SALVA_TUTTO.BAT",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/IL_MIO_TUTORIAL_SUBLIMETEXT.MD",
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_POWER_SHELL.MD",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/SUBLIMETEXT_DOCUMENTAZIONE_UFFICIALE.MD",
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_YAML.MD",
+		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/Markdown.sublime-package",
+		"/C/Users/icivi/AppData/Roaming/Sublime Text/Installed Packages/MarkdownEditing.sublime-package",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/SUBLIMETEXT_DOCUMENTAZIONE_DELLA_COMUNITA.MD",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT_DOS_COPIA_IN_GIT.bat",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT_DOS_COPY.bat",
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/HomePage.md",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_POWER_SHELL.MD",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_REACT_HTML.md",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_YAML.MD",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/2023-04-16.md",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/REACT_GUIDA_HTML.sublime-project",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/HomePage.md",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/Theme - Monokai+/Monokai+.sublime-theme",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/Markdown.sublime-settings",
@@ -245,7 +240,6 @@
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/Monokai+.sublime-color-scheme",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/User/Terminus.sublime-settings",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/SUBLIMETEXT_DOCUMENTAZIONE_DELLA_COMUNITA.MD",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT.MD",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/HTML-CSS-JS Prettify/Main.sublime-menu",
 		"/c/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TUTORIAL_SUBLIMETEXT.MD",
@@ -319,7 +313,6 @@
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_CONCETTI_CHIAVE/react-concetti-chiave/my-app/README.md",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_CONCETTI_CHIAVE/react-concetti-chiave/my-app/README.sublime-project",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_MENU_NJS/mia-app/README.md",
-		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_MENU_NJS/mia-app/src/index_old.js",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_MENU_NJS/mia-app/src/index.js",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_MENU_NJS/mia-app/src/index.css",
@@ -347,23 +340,34 @@
 		"/C/CASA/LINGUAGGI/ACCESS/ACCESS_TUTORIAL/HELP_ACCESS_2000/PROJECT_SublimeText/REDME.md",
 		"/C/CASA/LINGUAGGI/ACCESS/ACCESS_PROGETTI_MDB/GUIDA_DI_RIFERIMENTO_OGGETTI_ACCESS.MD",
 		"/C/CASA/LINGUAGGI/ACCESS/ACCESS_PROGETTI_MDB/GUIDA_RIFERIMENTI_MODELLI_DAO.MD",
-		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/User/PackageResourceViewer.sublime-settings",
-		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/PackageResourceViewer/PackageResourceViewer.sublime-settings",
-		"/C/CASA/LINGUAGGI/ACCESS/ACCESS_PROGETTI_MDB/GE_ACCESS.sublime-project",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/NUMERI_TELEFONICI_Dipendenti in Servizio.md",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/CIVILIA_ANALISI_SUBLIME_TEXT/HELP/Pg_05_Help.MD",
-		"/C/GESTIONI/GESTIONE_LLPP/25_GESTIONE_LLPP/LLPP_ARCHIVI_MDB/CIVILIA_GESTIONE/CIVILIA_TEXT_ANALISI/CIVILIA_ANALISI_SUBLIME_TEXT/HELP/HelpLinkCivilia.MD",
-		"/C/TMP/TMP_DA_SISTEMARE/TMP_ZZ_DELIBERE_DA_SISTEMARE/DGC_554_2010.MD"
+		"/C/CASA/PROGRAMMI/SUBLIME_TEXT/Data/Packages/User/PackageResourceViewer.sublime-settings"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
-		"height": 233.0,
+		"height": 229.0,
 		"where_history":
 		[
+			"",
+			"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html,<project filters>",
+			"",
+			"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\tutorial,<project filters>",
+			"",
+			"*.txt *bat *md",
+			"",
+			"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\src ,C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\tutorial,<project filters>",
+			"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\src ,C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\tutorial",
+			"",
+			"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html,-C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\node_modules",
+			"<project>,-C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\node_modules",
+			"<project>,C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT",
+			"<project>",
+			"",
+			"<open folders>",
+			"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html",
 			""
 		]
 	},
@@ -372,6 +376,73 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@raggruppamenti",
+			"@git",
+			"@ctrl+k",
+			"@salvataggio@veloce",
+			"@salvata",
+			"@git",
+			"@git@salva",
+			"@git@salvataggi",
+			"@git",
+			"@git@",
+			"@ctrl",
+			"@ctrl+k",
+			"brach",
+			"@git",
+			"?",
+			"@apri",
+			"5 -",
+			"5)",
+			"4)",
+			"3)",
+			"2)",
+			"1)",
+			")",
+			"@4.",
+			"apri file .pdf",
+			"apri",
+			"\n\t\t\t",
+			"@apri",
+			"@apri@pdf",
+			"@apri@tutorial",
+			"@tutorial",
+			"@apri",
+			"@git@add",
+			"introduzione",
+			"@apri@git",
+			"@apri",
+			"@apr",
+			"@apri@github",
+			"@apri",
+			"@apri@github",
+			"Note",
+			"@git",
+			"@apri",
+			"@apri@file",
+			"@tutorial",
+			"@apri@file",
+			"@apri.pdf",
+			"@collegamento",
+			"@link",
+			"@salvataggi",
+			"@apri@git",
+			"@salva@git",
+			"@apri@git",
+			"@salvataggio@veloce",
+			"@salvataggio",
+			"@guida@power",
+			"@Invoke",
+			"@esegui@fi",
+			"@esegui@firl",
+			"@attiva",
+			"@esegui",
+			"@get",
+			"ù",
+			"@get",
+			"@powershell",
+			"@power",
+			"@get",
 			"@git-f",
 			"@git",
 			"git",
@@ -432,65 +503,7 @@
 			"@come@creare",
 			"@progetto@deno",
 			"@creare",
-			"@deno",
-			"@creare@progett",
-			"@creare@un",
-			"@come",
-			"@come@creare",
-			"@progetto",
-			"@creare",
-			"@deno",
-			"crea progetto",
-			"@1",
-			"@1.",
-			"Aggiunta di gestori eventi",
-			"git",
-			"PENSARE IN REACT",
-			"gerarchia",
-			"@modello",
-			"@modllo",
-			"11.1",
-			"12.1",
-			"registrami",
-			"input",
-			"elementi",
-			"@9.4.TAG.SELECT",
-			"@9.4.TAG.SELECT.@cmb",
-			"faq",
-			"comandi git",
-			"git",
-			"@9.4.TAG.SELECT.",
-			"import App from './App'",
-			"9.4.TAG.SELECT",
-			"@CASELLA@DI@TESTO@textArea",
-			"@CASELLA@DI@TEST@textArea",
-			"@CASELLA@DI@TEST@@textArea",
-			"@CASELLA@DI@TEST@textArea",
-			"TODO",
-			"todo: in",
-			"@LISTE.E.CHIAVI.01.array",
-			"@LISTE E CHIAVI",
-			"4.",
-			"4.1",
-			"componenti e props",
-			"CREARE_UN_SEPARATORE",
-			"@JSX@CONVENZINE.camelcase",
-			"hover",
-			"button",
-			"setCount",
-			"button",
-			"faq",
-			"----------------------------",
-			"*/}",
-			"/",
-			"@CODICE---> 19_05_MOSSA_VISUALIZZATA = ??",
-			"npx",
-			"squaresCopy",
-			"ReactDOM",
-			"reactDom",
-			"board",
-			"bard",
-			"square"
+			"@deno"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -498,6 +511,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"5 -\n",
+			"4-\n",
+			"3 \n",
+			"2  \n",
+			"1 \n",
 			"  2.0.INTRODUTTIVA\n         2.1.INSTALLAZIONE\n",
 			"import App from './components/App'",
 			"@CASELLA@DI@TESTO@textArea",
@@ -510,7 +528,7 @@
 		"scrollbar_highlights": true,
 		"show_context": false,
 		"use_buffer2": false,
-		"use_gitignore": true,
+		"use_gitignore": false,
 		"whole_word": false,
 		"wrap": false
 	},
@@ -521,20 +539,20 @@
 			[
 				{
 					"buffer": 0,
-					"file": "tutorial/DOS_GIT_SALVA_TUTTO.BAT",
+					"file": "tutorial/GUIDA_POWER_SHELL.MD",
 					"selected": true,
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 297,
+						"buffer_size": 12114,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								297
+								449,
+								449
 							]
 						],
 						"settings":
@@ -557,16 +575,26 @@
 							},
 							"bracket_highlighter.regions":
 							[
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close",
-								"bh_single_quote_content",
 								"bh_c_define",
 								"bh_c_define_center",
 								"bh_c_define_open",
 								"bh_c_define_close",
 								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
 								"bh_double_quote",
 								"bh_double_quote_center",
 								"bh_double_quote_open",
@@ -577,21 +605,11 @@
 								"bh_regex_open",
 								"bh_regex_close",
 								"bh_regex_content",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_default_content",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_square_content",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_curly_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
 								"bh_round",
 								"bh_round_center",
 								"bh_round_open",
@@ -602,19 +620,19 @@
 								"bh_unmatched_open",
 								"bh_unmatched_close",
 								"bh_unmatched_content",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_angle_content",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_tag_content"
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
 							],
-							"lsp_uri": "file:///C:/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/DOS_GIT_SALVA_TUTTO.BAT",
-							"syntax": "Packages/Batch File/Batch File.sublime-syntax",
+							"lsp_uri": "file:///C:/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_POWER_SHELL.MD",
+							"syntax": "Packages/MarkdownEditing/syntaxes/Markdown.sublime-syntax",
 							"tab_size": 3,
 							"translate_tabs_to_spaces": false
 						},
@@ -631,7 +649,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 34.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -670,11 +688,15 @@
 	},
 	"output.Terminus":
 	{
-		"height": 255.0
+		"height": 122.0
 	},
 	"output.diagnostics":
 	{
 		"height": 138.0
+	},
+	"output.exec":
+	{
+		"height": 132.0
 	},
 	"output.find_results":
 	{
@@ -696,7 +718,7 @@
 	"project": "REACT_GUIDA_HTML.sublime-project",
 	"replace":
 	{
-		"height": 64.0
+		"height": 52.0
 	},
 	"save_all_on_build": false,
 	"select_file":
@@ -736,10 +758,10 @@
 		"lsp_show_inlay_hints": true
 	},
 	"show_minimap": false,
-	"show_open_files": false,
+	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 581.0,
+	"side_bar_width": 442.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
