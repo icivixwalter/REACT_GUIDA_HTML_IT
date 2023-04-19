@@ -1,0 +1,47 @@
+
+
+
+
+/*      FILE:                       Preference.sublime-settings
+        PATH:                       C:\Users\walter.rossi\AppData\Roaming\Sublime Text\Packages\User
+        cosa fa:                    ??    
+
+*/
+
+
+{
+	"color_scheme": "Monokai.sublime-color-scheme",
+	"theme": "Default Dark.sublime-theme",
+	"ignored_packages":
+	[
+		"Vintage",
+    ],
+
+
+
+    //non funziona per le variabili
+	//--------------------------------------------------//
+	 "variables":
+    {
+        "yellow": "hsl(54, 100%, 50%)",
+    },
+    "globals":
+    {
+        "background": "hsl(70, 0%, 15%)",
+    },
+    "rules":
+    [
+        {
+            "name": "Python docstrings",
+            "scope": "comment.block.documentation.python",
+            "foreground": "var(yellow)",
+        },
+    ],
+
+
+
+
+
+
+    "font_size": 12,
+}

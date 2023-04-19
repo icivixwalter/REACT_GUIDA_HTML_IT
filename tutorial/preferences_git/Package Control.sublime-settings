@@ -1,0 +1,27 @@
+
+
+
+/*      FILE:                       Package Control.sublime-settings
+        PATH:                       C:\Users\walter.rossi\AppData\Roaming\Sublime Text\Packages\User
+        cosa fa:                    ??    
+
+*/
+
+
+
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"10% Too Dull for My Tastes Color Scheme",
+		"Package Control",
+		"Package Reloader",
+		"PackageResourceViewer",
+		"Sherumite - Color Scheme",
+		"Terminal",
+	],
+	"debug": true,
+}

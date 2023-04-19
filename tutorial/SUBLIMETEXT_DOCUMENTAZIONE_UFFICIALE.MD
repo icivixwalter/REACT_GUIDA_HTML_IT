@@ -250,7 +250,7 @@ https://www.sublimetext.com/docs/index.html#customization
 
 										Colore di sfondo della riga contenente il cursore. Utilizzato solo quando l'impostazione highlight_line è abilitata.
 
-								---------------------------------------------------------------
+								----------------------------------------------------------------------------------------
 								Accenti		(Accents)
 											Note
 												Tra le impostazioni globali puoi inserire il GRUPPO DEGLI ACCENTI

@@ -1229,3 +1229,18 @@ HELP_SUBLIMETEXT
 						 e fa l'aggiornamento.
 
 
+
+### MIE_FAQ
+				@mie@faq
+			Apri il terminale				
+					la chiave è "keys": ["ctrl+alt+t"]
+												@apri@terminale_(MIE FAQ:  per aprire il terminale usa ctrl+alt+t )
+												@come@apri@terminale_(MIE FAQ:  per aprire il terminale usa ctrl+alt+t )
+			  									@apri.il@terminale
+
+		C
+			Come visualizzare i file aperti
+				via sul Menu
+						View ----> Side Bar ----> Show Open Files
+								@visualizza@file@aperti_(con il menu View ----> Side Bar ----> Show Open Files | visualizzi i file aperti)
+								@Nascondi@file@aperti_(con il menu View ----> Side Bar ----> Hide Open Files | nascondi i file aperti)

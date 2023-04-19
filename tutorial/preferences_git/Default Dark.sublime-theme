@@ -1,0 +1,25 @@
+
+
+
+/*      FILE:                       DefaultDark.sublime-settings
+        PATH:                       C:\Users\walter.rossi\AppData\Roaming\Sublime Text\Packages\User
+        cosa fa:                    ??    è da impostare ??
+        				si dovrebbero mettere i temi personalizzati
+        				vedi istruzioni in 4.2.THEMES (TEMI)
+        					@format
+
+*/
+
+
+
+
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+	"variables":
+	{
+	},
+	"rules": 
+	[
+		
+	]
+}

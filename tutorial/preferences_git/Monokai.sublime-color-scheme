@@ -1,0 +1,165 @@
+/* Documentation at https://www.sublimetext.com/docs/color_schemes.html
+		QUESTO E' IL FILE SCHEMA COLORI MONOKAY DELL'UTENTE
+		questo file viene aperto con 
+
+				Preference -----> Customize color scheme
+
+				Sono le IMPOSTAZIONI PREFERITE DELL'USER non quelle di sistema
+				si trova in questa path e file :
+	
+				path		: C:\Users\walter.rossi\AppData\Roaming\Sublime Text\Packages\User
+				file		: Monokai.sublime-color-scheme
+
+
+
+		Queste impostazioni dell'utente SOVRASCRIVONO quelle GENERALI.
+*/
+
+{
+	"name": "Example Color Scheme",
+   "variables":
+
+  //				LE VARIABILI
+	//------------------------------------------------------------------------------//
+	{
+		/* 
+
+    Colore  Valore  Definizione
+    Nero    #000000 Assenza di tutti colori.
+    Bianco  #FFFFFF Presenza di tutti i colori.
+    Rosso   #FF0000 Presenza solo del rosso.
+    Giallo  #FFFF00 Rosso + verde – blu.
+    */
+    //impostazioni di base di sblime text 
+
+    	
+    	"acqua" : "#00FFFF",                 //creato nuovo attenzione alla virgola
+		 
+    	//creato con l'esempio combinazione dei colori in https://www.sublimetext.com/docs/color_schemes.html#selection
+    	// ED HO INSERITO TUTTE LE IMPOSTAZIONE CONTRASSEGNATE CON QUESTO CODICE:
+    	//@CREAZIONE.24.02.2023
+		 "green": "hsla(153, 80%, 40%, 1)",
+		 "black": "#111",
+		 "white": "rgb(242, 242, 242)",
+
+		 "yellow": "hsl(54, 70%, 68%)",			//AGGIUNTO ANCHE IL GIALLO
+		 "orange3": "hsl(47, 100%, 79%)",
+	},
+	
+	//				GLOBALS
+	//------------------------------------------------------------------------------//
+	"globals": 
+	{   
+		//@CREAZIONE.24.02.2023
+				"background": "var(black)",						//COLORE SFONDO
+        "foreground": "var(white)",						//COLORE PRIMO PIANO DEL TESTO 
+        
+				//colore del testo selezionato impostato a Green
+        "selection_foreground": "var(green)",						//TESTO SELEZIONATO @CAMBIA@COLORE@TESTO@SELEZIONATO
+
+        "caret": "color(var(white) alpha(0.8))"         //Colore per gli spazi vuoti, 
+        												//quando viene eseguito il rendering. 
+        												//Se non specificato, il valore predefinito è il
+        												//primo piano con un'opacità pari a 0,35.
+
+
+
+	},
+	
+
+	//				RULES = LE REGOLE
+	//------------------------------------------------------------------------------//
+	"rules":
+	[  		
+
+
+				//QUESTE IMPOSTAZIONI si trovano in 
+				//COMBINAZIONE COLORI
+				//qui le istruzioni per la combinazione dei colori nel file Monokai.sublime-color-scheme
+				//https://www.sublimetext.com/docs/color_schemes.html#global-settings
+
+				//COLORE DELLE VARIABILI
+        //----------------------------------------------------------//
+				//NOMI DELLE VARIABILI colorate in blu, viola e rosa per i nomi delle variabili:
+					{
+				    "scope": "source - punctuation - keyword",
+    				"foreground": ["hsl(200, 60%, 70%)", "hsl(330, 60%, 70%)"]
+					},
+        //----------------------------------------------------------//
+
+				//COLORE DEI COMMENTI
+        //----------------------------------------------------------//
+				{		
+            "name": "Comment",
+            "scope": "comment",
+            "foreground": "color(var(black) blend(#fff 0%))" // i commenti sono in bianco
+            	//foreground MODIFICATO da #fff 50% --->0%   @CREAZIONE.24.02.2023
+        },
+        //----------------------------------------------------------//
+
+        //COLORE DEL TESTO BASE @CREAZIONE.24.02.2023 = TESTO PRIMO PIANO
+        //----------------------------------------------------------//
+          {
+            "name": "String",
+            "scope": "string",
+            "foreground": "var(yellow)",		//MA SE INSERISCE (green) diventa verde
+        	},
+        //----------------------------------------------------------//
+			
+				/*	LA SELEZIONE 
+						NON FUNZIONA IL CAMBIO DI COLORE DELLA SELEZIONE ??*/
+	      
+	      //----------------------------------------------------------//
+				{	"name": "selection",
+	            	"scope": "selection",
+					"selection": "var(yellow)",
+				},	
+				
+			
+	] //rules *** fine
+}
+
+
+
+/*Impostazioni globali @CREAZIONE.24.02.2023
+ ----------------------------------------------------------------------------------------------------------
+	Le seguenti impostazioni globali vengono inserite nell'oggetto con la chiave."globals"
+		si trovano qui: https://www.sublimetext.com/docs/color_schemes.html#selection
+
+	background"		= "Sfondo" 
+					Colore di sfondo predefinito.
+
+	foreground		"Primo piano" 
+						Colore predefinito per il testo.
+
+	invisibles		"Invisibili" 
+					Colore per gli spazi vuoti, quando viene eseguito il rendering. 
+					Se non specificato, il valore predefinito è il primo piano con un'opacità pari a 0,35.
+
+	"caret" 
+	Il colore del caret
+
+	
+	"block_caret" 	
+				Il colore del cursore quando si utilizza un cursore a blocchi
+
+	"block_caret_border" 
+				Il colore del bordo per un punto di inserimento del blocco
+
+	"block_caret_underline" 
+				Il colore della sottolineatura del punto di osservazione del 
+				blocco viene disegnato come quando si sovrappone a una selezione
+
+	"block_caret_corner_style" 
+				Lo stile degli angoli da utilizzare per i carretti a blocchi. 
+				Le opzioni includono: (impostazione predefinita) o .roundcutsquare
+
+	"block_caret_corner_radius" 
+				Raggio da utilizzare quando è o .block_caret_corner_styleroundcut
+
+	"line_highlight" 
+				Colore di sfondo della riga contenente il cursore. 
+				Utilizzato solo quando l'impostazione highlight_line è abilitata.
+
+ ----------------------------------------------------------------------------------------------------------
+/*
