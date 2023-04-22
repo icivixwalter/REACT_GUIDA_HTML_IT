@@ -12,7 +12,7 @@
 @REM            Come copiare Questo Task kil sulla posizione
 @REM            UTILIZZARE il comando di seguito indicato XCopy sia su Shelle che su powerShell
 @REM            viene comunque riconosciuto    @COPIA@BAT@TASKILL
-@REM XCOPY TasKill_N51_KILL_SOLO_PROCESSI.bat C:\CASA\LINGUAGGI\DOS\DOS_PROGETTI\TASKILL\
+@REM            XCOPY TasKill_N51_KILL_SOLO_PROCESSI.bat C:\CASA\LINGUAGGI\DOS\DOS_PROGETTI\TASKILL\
 
 
 

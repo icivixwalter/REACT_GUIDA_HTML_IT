@@ -1,0 +1,21 @@
+TROVA_PROGETTI_TUTTI
+
+	Se vuoi trovare tutti progetti devi aprire la path in cui c'e il riepilo di tutti i progetti
+	quali il DOS, PAWERSHELL, REACT ecc..
+
+
+		Per aprire questa cartella fare riferimento a queste chiavi di ricerca:
+		
+		//@DOVE@SI@TROVANO.I@PROGETTI	
+		//----------------------------------------------------------------------------------------//
+			Questo è il progetto di TUTTI@PROGETTI @trova@progetti
+			TROVA_PROGETTI.MD
+			@TUTTI@I@PROGETTI_(questo è il file contiene i riferimenti a tutti progetti)
+			
+			Apro il progetto con TUTTI i progetti con il DOS
+			Invoke-Item "c:\\CASA\\LINGUAGGI\\TROVA_PROGETTI\\TROVA_PROGETTI.sublime-project"
+			
+			Apro tutti i progetti con powershell
+			START "apri il progetto dei comandi di TUTTI@PROGETTI" "c:\\CASA\\LINGUAGGI\\TROVA_PROGETTI\\TROVA_PROGETTI.sublime-project"
+			
+		//----------------------------------------------------------------------------------------//
