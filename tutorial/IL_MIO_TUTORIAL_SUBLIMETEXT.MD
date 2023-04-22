@@ -1139,6 +1139,8 @@ HELP_SUBLIMETEXT
 			   passw walter_01_
 			   		@git@utenza_(UTENZA PER GIT HUB)
 			   		@git@create@project_(git come creare un nuovo progetto da locale a GitHup )
+			   		@git@crea@repository_(git come creare una nuova repository )
+
 ### EVENTI
 		Per gli eventi ci sono 2 possibilita
 			UTILIZZO DI BIND

@@ -5,9 +5,17 @@
 @REM                    CALL "C:\CASA\LINGUAGGI\HTML\PROGETTI_HTML\REACT_GUIDA_HTML_IT\react-guida-html\tutorial\TasKill_N51_KILL_SOLO_PROCESSI.bat"
 @REM                    CALL "TasKill_N51_KILL_SOLO_PROCESSI.bat"
 @REM               ----------------------------------------------
-@REM                    @pulisci@in@powershell
+@REM                    @pulisci@in@powershell  @attiva@bat @attiva@taskill
 @REM        Start-Process -FilePath "C:\CASA\LINGUAGGI\HTML\PROGETTI_HTML\REACT_GUIDA_HTML_IT\react-guida-html\tutorial\TasKill_N51_KILL_SOLO_PROCESSI.bat"
 @REM        Start-Process -FilePath "TasKill_N51_KILL_SOLO_PROCESSI.bat"
+
+@REM            Come copiare Questo Task kil sulla posizione
+@REM            UTILIZZARE il comando di seguito indicato XCopy sia su Shelle che su powerShell
+@REM            viene comunque riconosciuto    @COPIA@BAT@TASKILL
+@REM XCOPY TasKill_N51_KILL_SOLO_PROCESSI.bat C:\CASA\LINGUAGGI\DOS\DOS_PROGETTI\TASKILL\
+
+
+
 
 @REM-------------------------------------------------------------------------------
 
@@ -24,7 +32,7 @@
 @REM TASKLIST /S system /FO LIST
 @REM in studio
 @rem TASKLIST /M /FO LIST 
-@REM TASKKILL /F /IM swc_service.exe
+@REM TASKKILL /F /IM cTrader.exe
 
 
 @rem PAUSE
@@ -51,6 +59,15 @@ TASKKILL /F /IM "FortiClientSecurity.exe"
 @REM-------------------------------------------------------------------------------
 
 
+
+@REM ANTIVIRUS MCFEE + karspesky
+@REM-------------------------------------------------------------------------------
+
+@REM //cisco CHIUDE SOLO se c'è * e le "" + /f
+TASKKILL /IM "ModuleCoreService.exe" /F 
+TASKKILL /F /IM kpm_tray.exe
+
+F
 @REM --------------------- internet + office + ONDRIVE ------------------------
 
 @REM outlook
@@ -315,6 +332,13 @@ TASKKILL /IM "plugin_host-3.8.exe"
 
 TASKKILL /IM "splwow64.exe" 
 
+
+@REM-------------------------------------------------------------------------------
+
+@REM ICtrade  ICMarket
+@REM-------------------------------------------------------------------------------
+@REM  il trading sospendo IcMarkets su desktop
+TASKKILL /F /IM cTrader.exe
 
 @REM-------------------------------------------------------------------------------
 
