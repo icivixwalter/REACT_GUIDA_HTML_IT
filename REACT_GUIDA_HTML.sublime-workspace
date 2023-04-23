@@ -67,6 +67,142 @@
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
+		},
+		{
+			"contents": "@REM NOME FILE BAT DOS_GIT_SALVA_TUTTO.BAT\n@rem COMANDO DOS DI SALVATAGGIO\n@REM per attivarlo copia quest comando\n@REM \n\n@rem prima mi sposto per sicurezza nella cartella giusta + effettuo un controllo dir\ncd C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\tutorial\ndir *.bat\n\n@rem salvo tutto con git\ngit add .\ngit commit -m \"aggiornamento git preferences di frosinone\"\ngit push\n\nexit\n@REM ------------ fine bat ------------------\n\n\n\n\n\n\n@REM \t\t\t\t\t\tCOMMENTO COLLETTIVO\n@REM //=======================================================================================================//\ngoto attivazione\n\n\n\n// PER OTTENERE L'INDIRIZZO WEB DI GITHUB USA IL COMANDO REMOTE\n//---------------------------------------------------------------------------------//\n\n\t@trova@repository@github@git@apri@indirizzo@web@apri@git_(comando git remote per ottenre l'indirizzo web) \n\ncomando git per ottenere l'indirizzo web della repository: \nper aprire github usa git remote:\n\n\tgit remote get-url origin \n\n\n\n\n---------------------------------------------------------------------------------\n\n// CLONA IL PROGETTO DALLA REPOSITORY GIT  IN Powershell O IN DOS\n//---------------------------------------------------------------------------------//\n\n\t\n\t@clona.in@dos@clona.in@powershell\n\n\tgit clone \"https://github.com/icivixwalter/REACT_GUIDA_HTML_IT\"\n\n//---------------------------------------------------------------------------------//\n\n\n\n// VISUALIZZA IN Powershell GITHUB + VISUALIZZA IN DOS\n//---------------------------------------------------------------------------------//\nper aprire il browser con pawershell utilizzare il comando :\n\n@apri@github.in@powershell_(cmd per aprire il browser in github con powershell_)\n@visualizza@repository@apri@github.in@dos_(cmd per aprire il browser in github con DOS)\n\n\t\t\t    \t\t comando powershell_\n\t\t\t\t============================================\n\n\tStart-Process \"https://github.com/icivixwalter/REACT_GUIDA_HTML_IT\"\n\n\t\t\t\t\t\t\n\t\t\t\t\t\tcomando in dos\n\t\t\t\t============================================\nIn dos puoi usare start ma viene riconosciuto anche in Powershell\n\n\tstart https://github.com/icivixwalter/REACT_GUIDA_HTML_IT\n\t\n//---------------------------------------------------------------------------------//\n\n\n\n\n\n\n// SALVATAGGIO VELOCE IN Powershell\n//---------------------------------------------------------------------------------//\ncopia il comando in pawershell per eseguire il salvataggio\nsu git in modo veloce.\n@git@add.powershell_(salvataggio veloce in pawershell)\n@git@salvataggio@veloce.in@powershell_(Utilizza il saltaggio veloci in Powershell)\n@git@salvataggi@veloci.in@powershell_(In Powershell Utilizza il saltaggio veloci )\n@salva@git@veloce  @salva@veloce.con.git\n\n\nStart-Process -FilePath \"C:\\CASA\\LINGUAGGI\\HTML\\PROGETTI_HTML\\REACT_GUIDA_HTML_IT\\react-guida-html\\tutorial\\DOS_GIT_SALVA_TUTTO.bat\"\n//---------------------------------------------------------------------------------//\n\n\n\n// SALVATAGGIO VELOCE IN DOS\n//---------------------------------------------------------------------------------//\n\n@git@salvataggio@veloce.in@dos_(Utilizza il saltaggio veloci in dos)\n@git@salvataggi@veloci.in@powershell_(In dos Utilizza il saltaggio veloci )\n\ncopia questo comando nella shell dos\n\t\t\t\t\tcomando 1\ncmd.exe \n\t\t\t\t\tcomando 2\ncall DOS_GIT_SALVA_TUTTO.BAT\n\n//---------------------------------------------------------------------------------//\n\n:attivazione\n\n@REM    *** FINE  *****\n@REM //=======================================================================================================//",
+			"file": "tutorial/DOS_GIT_SALVA_TUTTO.BAT",
+			"file_size": 3672,
+			"file_write_time": 133264050952268853,
+			"settings":
+			{
+				"buffer_size": 3559,
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "@SA"
+					},
+					"AwAAAEIMAAAAAAAAQwwAAAAAAAAAAAAAQwwAAAAAAABEDAAAAAAAAAAAAABEDAAAAAAAAEUMAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABCDAAAAAAAAEIMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					8,
+					2,
+					"left_delete",
+					null,
+					"AgAAAEQMAAAAAAAARAwAAAAAAAABAAAAQUMMAAAAAAAAQwwAAAAAAAABAAAAUw",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABFDAAAAAAAAEUMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "@"
+					},
+					"AQAAAEMMAAAAAAAARAwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDDAAAAAAAAEMMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					10,
+					1,
+					"left_delete",
+					null,
+					"AQAAAEMMAAAAAAAAQwwAAAAAAAABAAAAQA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABEDAAAAAAAAEQMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					11,
+					1,
+					"insert",
+					{
+						"characters": "DO"
+					},
+					"AgAAAEMMAAAAAAAARAwAAAAAAAAAAAAARAwAAAAAAABFDAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDDAAAAAAAAEMMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					12,
+					2,
+					"left_delete",
+					null,
+					"AgAAAEQMAAAAAAAARAwAAAAAAAABAAAAT0MMAAAAAAAAQwwAAAAAAAABAAAARA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABFDAAAAAAAAEUMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					13,
+					1,
+					"insert",
+					{
+						"characters": "dos"
+					},
+					"AwAAAEMMAAAAAAAARAwAAAAAAAAAAAAARAwAAAAAAABFDAAAAAAAAAAAAABFDAAAAAAAAEYMAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABDDAAAAAAAAEMMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "@salva"
+					},
+					"BgAAAEYMAAAAAAAARwwAAAAAAAAAAAAARwwAAAAAAABIDAAAAAAAAAAAAABIDAAAAAAAAEkMAAAAAAAAAAAAAEkMAAAAAAAASgwAAAAAAAAAAAAASgwAAAAAAABLDAAAAAAAAAAAAABLDAAAAAAAAEwMAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABGDAAAAAAAAEYMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					15,
+					1,
+					"insert_completion",
+					{
+						"completion": "salvataggi",
+						"format": "text",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "salvataggi"
+					},
+					"AgAAAEcMAAAAAAAARwwAAAAAAAAFAAAAc2FsdmFHDAAAAAAAAFEMAAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABMDAAAAAAAAEwMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					16,
+					5,
+					"left_delete",
+					null,
+					"BQAAAFAMAAAAAAAAUAwAAAAAAAABAAAAaU8MAAAAAAAATwwAAAAAAAABAAAAZ04MAAAAAAAATgwAAAAAAAABAAAAZ00MAAAAAAAATQwAAAAAAAABAAAAYUwMAAAAAAAATAwAAAAAAAABAAAAdA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABRDAAAAAAAAFEMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					17,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAEwMAAAAAAAATQwAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABMDAAAAAAAAEwMAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					19,
+					1,
+					"right_delete",
+					null,
+					"AQAAAE0MAAAAAAAATQwAAAAAAAABAAAACg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABNDAAAAAAAAE4MAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					22,
+					1,
+					"cut",
+					null,
+					"AQAAAEIMAAAAAAAAQgwAAAAAAAAKAAAAQGRvc0BzYWx2YQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABCDAAAAAAAAEwMAAAAAAAAAAAAAAAA8L8"
+				]
+			]
 		}
 	],
 	"build_system": "",
@@ -219,8 +355,8 @@
 	],
 	"file_history":
 	[
-		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_POWER_SHELL.MD",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/DOS_GIT_SALVA_TUTTO.BAT",
+		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/GUIDA_POWER_SHELL.MD",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/IL_MIO_TUTORIAL_SUBLIMETEXT.MD",
 		"/C/CASA/LINGUAGGI/HTML/PROGETTI_HTML/REACT_GUIDA_HTML_IT/react-guida-html/tutorial/TasKill_N51_KILL_SOLO_PROCESSI.bat",
 		"/C/Users/icivi/AppData/Roaming/Sublime Text/Packages/Terminal/readme.md",
@@ -382,6 +518,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"@salvataggi",
+			"@git",
 			"start",
 			"@dos",
 			"start",
@@ -507,9 +645,7 @@
 			"ctrl+4",
 			"livelli",
 			"fold_by_level",
-			"ctrl+k, ctrl+",
-			"=======",
-			"<<<<<<< HEAD"
+			"ctrl+k, ctrl+"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -546,8 +682,7 @@
 				{
 					"buffer": 0,
 					"file": "TROVA_PROGETTI_TUTTI.MD",
-					"selected": true,
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 933,
@@ -557,8 +692,8 @@
 						"selection":
 						[
 							[
-								580,
-								661
+								20,
+								20
 							]
 						],
 						"settings":
@@ -568,7 +703,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 187.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tutorial/DOS_GIT_SALVA_TUTTO.BAT",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1010,
+								1010
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 559.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
